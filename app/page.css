@@ -1,0 +1,36 @@
+
+.first-section{
+    display: flex;
+    height: 75rem;
+     max-width: 100%;
+}
+.first-section-explore{
+    margin: 12rem 0 0 15px;
+}
+.first-section-left{
+    font-size: 7rem;
+    height: 60rem;
+    width: 68rem;
+}
+.btn{
+    padding: 20px 35px;
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.first-section-right{
+    height: 60rem;
+    width: 66rem;
+    display: flex;
+    padding: 40px 0 20px 0;
+}
+.psychology{
+    margin: 15rem 20px;
+}

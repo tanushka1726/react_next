@@ -1,0 +1,32 @@
+.left-header-elements {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.left-header-elements p {
+  margin: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+}
+.left-header-elements span {
+  margin: 15px 20px 10px 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.right-header-elements {
+  display: flex;
+  margin-left: auto;
+}
+.search-bar {
+  border: 1px solid black;
+  color: black;
+  border-radius: 20px;
+  padding: 3px 6rem;
+  margin: 10px;
+}
+.header-cart-icon {
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px 10px;
+}
