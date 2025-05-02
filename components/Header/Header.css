@@ -13,6 +13,9 @@
   font-weight: 700;
   font-size: 30px;
 }
+.left-header-elements p,span:hover{
+  cursor: pointer;
+}
 .right-header-elements {
   display: flex;
   margin-left: auto;

@@ -1,0 +1,47 @@
+.book-collection{
+    display:flex;
+    background-color:#e5e6e1;
+    height: 15rem;
+    max-width: 100%;
+}
+.book-collection h1{
+    font-size: 5rem;
+    font-weight: 300;
+}
+.book-collection h5{
+    margin: 90px 0px 0 100px;
+    font-size: 1.15rem;  
+}
+.book-store{
+    margin-top: 8rem;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100rem;
+    
+}
+.book-card{
+    margin-left: 20px;
+}
+.book-card h2,h3{
+    font-weight: 300;
+    line-height: 10px;
+}
+
+.next-btn{
+    padding: 20px 35px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.next-btn:hover{
+    background-color:black;
+    color: white;
+    border: 1px solid black;
+    
+}
+.next-button{
+    margin-left: 72rem;
+    display: inline-block;
+    height: 15rem;
+}
