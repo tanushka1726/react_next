@@ -1,14 +1,21 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .first-section{
     display: flex;
-    height: 75rem;
+    height: 60rem;
      max-width: 100%;
+     background-color:#e5e6e1;
 }
 .first-section-explore{
     margin: 12rem 0 0 15px;
+    
 }
+
 .first-section-left{
-    font-size: 7rem;
+    font-size: 5rem;
     height: 60rem;
     width: 68rem;
 }
@@ -19,11 +26,13 @@
     border-radius: 35px;
     font-weight: 600;
     font-size: 18px;
+    margin-top: 30px !important;
 }
 .btn:hover{
     background-color: white;
     border: 1px solid black;
     color: black;
+    transition-duration: 0.5s;
 }
 .first-section-right{
     height: 60rem;
@@ -33,4 +42,34 @@
 }
 .psychology{
     margin: 15rem 20px;
+}
+.second-section{
+    display:flex;
+    margin-top:7rem;
+    height: 75rem;
+    /* padding: 30px; */
+}
+
+.community-left img{
+    margin-left: 22rem;
+}
+.community-right{
+    margin: 5rem 0 0 2rem;
+}
+.community-right p {
+    margin-top: 2rem;
+    line-height: 1.45rem;
+    margin-right: 10px;
+
+}
+.community-left h1{
+    font-weight: 200;
+    margin: 40px 0 20px 40px;
+    font-size:2.5rem;
+}
+.community-left p{
+    margin: 10px 40px;
+}
+.explore{
+    display:flex;
 }

@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .book-collection{
     display:flex;
     background-color:#e5e6e1;
@@ -5,12 +11,14 @@
     max-width: 100%;
 }
 .book-collection h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
+    margin: 55px 10px 0 20px;
     font-weight: 300;
 }
 .book-collection h5{
-    margin: 90px 0px 0 100px;
+    margin: 90px 0 0 90px;
     font-size: 1.15rem;  
+    font-weight: 100;
 }
 .book-store{
     margin-top: 8rem;
@@ -23,9 +31,9 @@
 .book-card{
     margin-left: 20px;
 }
-.book-card h2,h3{
+.book-card h4,p{
     font-weight: 300;
-    line-height: 10px;
+    line-height: 25px;
 }
 
 .next-btn{
@@ -38,6 +46,8 @@
     background-color:black;
     color: white;
     border: 1px solid black;
+    transition-duration:1s ;
+    cursor: pointer;
     
 }
 .next-button{

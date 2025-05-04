@@ -1,11 +1,11 @@
 import React from "react";
 import "./Banner.css"
-const page = ({title,description}) => {
+const page = () => {
   return (
     <>
     <div className="about-us-head">
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <h1></h1>
+      <p></p>
       
     </div>
     </>

@@ -6,12 +6,12 @@ const page = () => {
   return (
     <>
       <div className="left-header-elements">
-        <span>READSTER</span>
-        <p>Books</p>
-        <p>Shop</p>
-        <p> About</p>
-        <p>Blog</p>
-        <p>Contact us</p>
+       <a href="/"> <span> READSTER</span></a>
+        <a href="/books">Books</a>
+        <a href="/shop">Shop</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="">Contact us</a>
         <div className="right-header-elements">
           <div className="search-bar"><IoSearchOutline />Search</div>
           <div className="header-cart-icon"><IoBag /></div>

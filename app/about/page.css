@@ -113,7 +113,7 @@
     font-size: 1.20rem;
     width: 30%;
 }
-.members{
+.members,.testimonial{
     padding: 10px 20px;
     display: inline-block;
     border-radius: 50px;
@@ -123,11 +123,11 @@
     height: 40rem;
     margin: 7rem 0 0 40px ;
 }
-.team-members h1{
+.team-members h1,.testimonials h1{
     font-weight: 200;
     font-size: 2.50rem;
     margin-top:15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .member-name{
     border-radius: 45px;
@@ -146,7 +146,35 @@
     position: relative;
 }
 .review{
-    background-color: #e4b976;
-    height: 20rem;
+    background-color:#e0cbcd;
+    /* background-color: #bbb2cf; */
+    height: 15rem;
+    display:flex;
 }
+.review-card{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 25px;
+    width: 100%;
+    margin-top: 4rem;
+}
+.review-card h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 4rem;
+}
+.review-card span{
+    margin-right: 0;
+}
+.review-card p{
+    margin-left: 10px;
+}
+.testimonials{
+    height: 30rem;
+    margin-top: 6rem;
+    padding: 30px;
+}
+
+
 

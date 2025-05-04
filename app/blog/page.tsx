@@ -71,6 +71,7 @@ const page = () => {
             </div>
         </div>
           <hr />
+          <br /> <br />
           <div className="next-button" >
               <button className="next-btn">Next<IoMdArrowForward /></button>
         </div>
