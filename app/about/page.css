@@ -178,3 +178,11 @@
 
 
 
+.pagination_swiper{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 7px;
+}
