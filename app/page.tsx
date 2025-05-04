@@ -10,12 +10,10 @@ const page = () => {
       <div className="first-section">
         <div className="first-section-left">
           <div className="first-section-explore">
-<<<<<<< HEAD
-          <p>Find your next great <br /> read at our online <br /> book store <br /><button type="button"className="btn">Explore Books<IoMdArrowForward /></button></p>
-=======
+
           <h1>Find your next great <br /> read at our online <br /> book store</h1>
           <button type="button" className="btn">Explore Books<IoMdArrowForward /></button>
->>>>>>> bd1054c9aa5547cb1315dc9cf01e8b73e282a43f
+
           </div>
           
         </div>
