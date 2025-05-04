@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .blog-collection{
     display:flex;
     background-color:#e5e6e1;
@@ -5,7 +11,7 @@
     max-width: 100%;
 }
 .blog-collection h1{
-    margin-left: 20px;
+    margin: 60px 20px 0 40px;
     font-size: 5rem;
     font-weight: 200;
 }
@@ -13,23 +19,23 @@
     margin: 6rem 0 0 25rem;
     font-size: 1.15rem;  
     font-weight: 200;
-    line-height:20px;
+    line-height:30px;
 }
 .book-blogs{
     margin-top: 8rem;
     height: 180rem;
-    /* background-color: yellow; */
     max-width: 100%;
 }
 .blog-card{
     display: flex;
-    margin: 50px 20px 50px 20px;
+    margin: 50px 0 50px 20px;
 }
 .blog-info{
     margin: 40px 0 0 40px ;
 }
 .blog-info h4{
     font-weight: 300;
+    line-height: 30px;
     font-size: 1.12rem;
 
 }
@@ -47,6 +53,8 @@
     background-color:black;
     color: white;
     border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 1s;
     
 }
 .next-button{

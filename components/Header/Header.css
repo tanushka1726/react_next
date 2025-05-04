@@ -2,11 +2,13 @@
   display: flex;
   border-bottom: 1px solid black;
 }
-.left-header-elements p {
+.left-header-elements a{
   margin: 20px;
   font-weight: 600;
   font-size: 18px;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 .left-header-elements span {
   margin: 15px 20px 10px 10px;

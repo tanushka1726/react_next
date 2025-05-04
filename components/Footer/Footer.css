@@ -27,7 +27,7 @@
     display: flex;
 }
 .basic-right-section,.privacy-right-section{
-    margin: 12rem 0 30px 18rem;
+    /* margin: 12rem 0 30px 18rem; */
     font-size:16px;
     font-weight: 500;
     line-height: 28px;
