@@ -72,6 +72,8 @@
 }
 .explore{
     display:flex;
+<<<<<<< HEAD
+=======
 }
 
 .first-section-explore h1 {
@@ -82,4 +84,5 @@
     font-size: 70px;
  
     line-height: 130%;
+>>>>>>> 44f982902574d7674ed93fec772d1508554ae100
 }
