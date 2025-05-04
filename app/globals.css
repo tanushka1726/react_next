@@ -16,12 +16,23 @@
 body {
   font-family: "Aspekta", sans-serif;
   font-weight: 400;
+  color: var(--body);
+  font-size: 16px;
+  line-height: 170%;
 }
 
-a{
-  font-family: "Aspekta", sans-serif;
-  font-weight: 500;
+:root {
+  --body: #333;
+  --black: black;
+  --primary: #e5e6e1;
+  --white: white;
+  --bg: #f2f3f0;
+  --purple: #bbb2cf;
+  --yellow: #e4b976;
+  --pink: #ca9da2;
 }
+
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-weight: bold;
@@ -94,3 +105,12 @@ ul, ol {
   margin-bottom: 10px;
   padding-left: 40px;
 }
+
+/* .container {
+  width: 100%;
+  max-width: 1336px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
