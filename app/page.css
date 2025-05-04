@@ -43,7 +43,6 @@
 .psychology{
     margin: 15rem 20px;
 }
-<<<<<<< HEAD
 .second-section{
     display:flex;
     margin-top:7rem;
@@ -73,15 +72,4 @@
 }
 .explore{
     display:flex;
-=======
-
-.first-section-explore h1 {
-    color: var(--black);
-    margin-top: 0;
-    margin-bottom: 10px;
- 
-    font-size: 70px;
- 
-    line-height: 130%;
->>>>>>> bd1054c9aa5547cb1315dc9cf01e8b73e282a43f
 }
