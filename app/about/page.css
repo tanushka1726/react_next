@@ -150,6 +150,7 @@
     /* background-color: #bbb2cf; */
     height: 15rem;
     display:flex;
+    position: relative;
 }
 .review-card{
     margin-left: auto;
@@ -170,11 +171,25 @@
 .review-card p{
     margin-left: 10px;
 }
+.state-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.state-graphics{
+    position:absolute;
+    bottom: 0;
+    right: 10%;
+}
+.state-img-wrap{
+    position: absolute;
+    top: -25px;
+    right: 3%;
+}
 .testimonials{
     height: 30rem;
     margin-top: 6rem;
     padding: 30px;
 }
-
 
 

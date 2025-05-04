@@ -10,14 +10,10 @@ const page = () => {
       <div className="first-section">
         <div className="first-section-left">
           <div className="first-section-explore">
-<<<<<<< HEAD
-          <p>Find your next great <br /> read at our online <br /> book store <br /><button type="button"className="btn">Explore Books<IoMdArrowForward /></button></p>
-=======
 
           <h1>Find your next great <br /> read at our online <br /> book store</h1>
           <button type="button" className="btn">Explore Books<IoMdArrowForward /></button>
 
->>>>>>> 44f982902574d7674ed93fec772d1508554ae100
           </div>
           
         </div>
@@ -49,26 +45,26 @@ const page = () => {
         <h1>Explore Categories</h1>
         <div className="explore">
           <div className="explore-card">
-            <img src="http://127.0.0.1:5501/reader/cdn.prod.website-file…4729ea8883/64b667ebd3a2a264e26fd82c_biography.jpg" alt="" />
-            <div className="biography">
+            <img src="category2.jpg" alt="" width={300} height={300}/>
+            <div className="side-bar">
               <h2>Biography</h2>
               <div className="shop-now">Shop now</div>
             </div>
           </div>
-          <div className="explore-card">
-            <img src="http://127.0.0.1:5501/reader/cdn.prod.website-file…8c5c4729ea8883/64b667ebcbb311f07e232944_novel.jpg" alt="" />
-            <div className="novel">
-            <h2>Biography</h2>
+          {/* <div className="explore-card">
+            <img src="category1.jpg" alt="" width={300} height={300}/>
+            <div className="side-bar">
+            <h2>Novels</h2>
             <div className="shop-now">Shop now</div>
             </div>
           </div>
           <div className="explore-card">
-            <img src="http://127.0.0.1:5501/reader/cdn.prod.website-file…4729ea8883/64b667ebb53f528e8fb001ac_self-help.jpg" alt="" />
-            <div className="self-help">
-            <h2>Biography</h2>
+            <img src="category3.jpg" alt="" width={300} height={300}/>
+            <div className="side-bar">
+            <h2>Self Help</h2>
             <div className="shop-now">Shop now</div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
