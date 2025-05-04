@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .about-us-head{
     display:flex;
     background-color:#e5e6e1;
@@ -5,7 +11,7 @@
     max-width: 100%;
 }
 .about-us-head h1{
-    margin-left: 20px;
+    margin: 55px 0 40px 40px;
     font-size: 5rem;
     font-weight: 100;
 }
@@ -15,3 +21,132 @@
     font-weight: 100;
     line-height:20px;
 }
+.about-our-story{
+    display: flex;
+    margin-top: 8rem;
+}
+.about-first-left-section{
+    margin: 3px 50px 0 40px;
+    height: 45rem;
+}
+.our_story{
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+.about-first-right-section p{
+    margin: 30px 20px 0 0;
+    line-height: 30px;
+    font-size: 1.15rem;
+}
+.work-with-us{
+    display: flex;
+    height:40rem;   
+}
+.work-with-us img{
+    margin: 10px 0 0 20px;
+}
+.work-para{
+    margin:13rem 20px 0 50px;
+    line-height: 25px;
+}
+.work-para h1{
+    margin-bottom: 30px;
+    font-size:3.5rem ;
+    font-weight: 200;
+}
+.work-para p{
+    margin-left: 12px;
+    font-size: 1.15rem;
+}
+.publish{
+    display:flex;
+}
+.publish-para{
+    margin:6rem 20px 0 20px;
+    height: 30rem;
+}
+.publish-para p{
+    line-height: 25px;
+    margin: 15px 70px 0 0 ;
+    font-size: 1.15rem;
+
+}
+.publish-para h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+.publish img {
+    margin-right: 20px;
+}
+.publish-with-us{
+    display:flex;
+    height:28rem;
+    background-color: #e5e6e1;
+}
+.publish-left-side{
+    margin:7rem 80px 20px 30px;
+    line-height: 30px;
+    /* background-color: red; */
+    width: 35%;
+}
+.publish-left-side h1{
+    font-size: 3rem;
+    font-weight:200;
+    margin-bottom:30px;
+}
+.send-email{
+    border-radius: 50px;
+    display:inline-block;
+    background-color: white;
+    padding:10px 20px;
+    margin-top:20px;
+}
+.send-email span{
+    font-weight: 700;
+}
+.publish-right-side{
+    margin:7rem 20px 0 25rem;
+    line-height: 50px;
+    font-size: 1.20rem;
+    width: 30%;
+}
+.members{
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.team-members{
+    height: 40rem;
+    margin: 7rem 0 0 40px ;
+}
+.team-members h1{
+    font-weight: 200;
+    font-size: 2.50rem;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.member-name{
+    border-radius: 45px;
+    padding: 8px 25px;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+}
+.team-member-info{
+    display: flex;
+}
+.team-members-card{
+    margin-right: 15px;
+    position: relative;
+}
+.review{
+    background-color: #e4b976;
+    height: 20rem;
+}
+
