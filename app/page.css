@@ -21,17 +21,16 @@
 }
 .btn{
     padding: 20px 35px;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 35px;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 18px;
-    margin-top: 30px !important;
-}
-.btn:hover{
-    background-color: white;
-    border: 1px solid black;
-    color: black;
+} 
+ .btn:hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
     transition-duration: 0.5s;
 }
 .first-section-right{
@@ -46,7 +45,7 @@
 .second-section{
     display:flex;
     margin-top:7rem;
-    height: 75rem;
+    height: 73rem;
     /* padding: 30px; */
 }
 
@@ -60,6 +59,7 @@
     margin-top: 2rem;
     line-height: 1.45rem;
     margin-right: 10px;
+    margin-bottom: 40px;
 
 }
 .community-left h1{
@@ -73,13 +73,100 @@
 .explore{
     display:flex;
 }
+.explore-category{
+    height: 25rem;
+}
+.explore-category h1{
+    margin: 0 0 40px 28px;
+    font-weight: 200;
+}
+.explore-card{
+    display: flex;
+    margin-left: 20px;
+}
+.side-bar{
+    width: 200px;
+    height: 200px;
+}
+.biography{
+    background-color: var(--purple);
+}
+.novel{
+    background-color:  var(--pink);
+}
+.self-help{
+    background-color: var(--yellow);
+}
+.side-bar h3{
+    margin: 20px;
+    color: var(--white);
 
+}
+.shop-now{
+    background-color: var(--white);
+    display: inline-block;
+    border-radius: 50px;
+    margin: 60px 0 10px 20px;
+    padding: 5px 12px;
+
+}
 .first-section-explore h1 {
     color: var(--black);
     margin-top: 0;
     margin-bottom: 10px;
- 
     font-size: 70px;
- 
     line-height: 130%;
+}
+.trending{
+    display: inline-block;
+    border: 1px solid var(--black);
+    padding:10px 25px;
+    margin: 20px;
+    border-radius: 50px;
+}
+.trending-books h1{
+    font-weight: 200;
+    margin-left: 20px
+}
+.book-store{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+}
+.book-card{
+    margin-left: 20px;
+}
+.next-btn{
+    padding: 12px 30px;
+    border-radius: 35px;
+    font-weight: 200;
+    font-size: 18px;
+    background-color: var(--white);
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.next-btn:hover{
+    background-color:var(--black);
+    color: var(--white);
+    transition-duration:1s ;
+    
+}
+.next-button{
+    margin-left: 70rem;
+    display: inline-block;
+    height: 15rem;
+}
+.facility{
+    height: 15rem;
+}
+.featured-info{
+    display: flex;
+}
+.book-details{
+    height: 20rem;
+    width: 25rem;
+    margin: 30px;
 }

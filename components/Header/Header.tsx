@@ -49,7 +49,7 @@ const page = () => {
         <a href="/shop">Shop</a>
         <a href="/about">About</a>
         <a href="/blog">Blog</a>
-        <a href="">Contact us</a>
+        <a href="/contactus">Contact us</a>
         <div className="right-header-elements">
           <div className="search-bar">
             <IoSearchOutline size={25} />

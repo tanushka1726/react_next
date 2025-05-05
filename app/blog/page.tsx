@@ -12,7 +12,7 @@ const page = () => {
     </div>
     <div className="book-blogs">
         <div className="blog-card">
-            <img src="blog1.jpg" alt="blog1" width={530} height={400}/>
+            <img src="/bolg_images/blog1.jpg" alt="blog1" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 23,2023</h4>
                 <h1>A Journey into the Enchanting Depths of <br /> books</h1>
@@ -22,7 +22,7 @@ const page = () => {
         </div>
         <hr />
         <div className="blog-card">
-            <img src="blog2.jpg" alt="blog2" width={530} height={400}/>
+            <img src="/bolg_images/blog2.jpg" alt="blog2" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 20,2023</h4>
                 <h1>Discovering Strengths and Embracing <br /> Change</h1>
@@ -32,7 +32,7 @@ const page = () => {
         </div>
         <hr />
         <div className="blog-card">
-            <img src="blog3.jpg" alt="blog3" width={530} height={400}/>
+            <img src="/bolg_images/blog3.jpg" alt="blog3" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 20,2023</h4>
                 <h1>Books of Personal Growth and Self-<br /> Discovery</h1>
@@ -42,7 +42,7 @@ const page = () => {
         </div>
         <hr />
         <div className="blog-card">
-            <img src="blog4.jpg" alt="blog4" width={530} height={400}/>
+            <img src="/bolg_images/blog4.jpg" alt="blog4" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 20,2023</h4>
                 <h1>Shop Your Favourite Reads Anytime,Anywhere <br /> books</h1>
@@ -52,7 +52,7 @@ const page = () => {
         </div>
         <hr />
         <div className="blog-card">
-            <img src="blog5.jpg" alt="blog5" width={530} height={400}/>
+            <img src="/bolg_images/blog5.jpg" alt="blog5" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 20,2023</h4>
                 <h1>Unleasing the Power of Positive<br /> Thinking</h1>
@@ -62,7 +62,7 @@ const page = () => {
         </div>
         <hr />
         <div className="blog-card">
-            <img src="blog6.jpg" alt="blog6" width={530} height={400}/>
+            <img src="/bolg_images/blog6.jpg" alt="blog6" width={530} height={400}/>
             <div className="blog-info">
                 <h4>July 20,2023</h4>
                 <h1>Books to Inspire,Motivate,and Unleash <br /> Your Inner Artist</h1>
@@ -73,7 +73,7 @@ const page = () => {
           <hr />
           <br /> <br />
           <div className="next-button" >
-              <button className="next-btn">Next<IoMdArrowForward /></button>
+              <a href="/blog" className="next-btn">Next<IoMdArrowForward /></a>
         </div>
     </div>
         
