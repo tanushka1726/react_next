@@ -5,24 +5,80 @@ import "./page.css"
 // import "./globals.css"
 import { IoMdArrowForward } from "react-icons/io";
 import Image from "next/image";
-// type book = {
-//   image: string;
-//   title: string;
-//   price: string;
-// };
-// const books : book[]=[
-//   {
-//     image:"/alchemist.jpg",
-//     title:"The Alchemist",
-//     price:"$11.00 USD"
-//   },
-//   {
-//     image:"deadbody.jpg",
-//     title:"Over My Dead Body",
-//     price:"$14.52 USD"
-//   },
-// ]
+type books = {
+  image: string;
+  title: string;
+  price: string;
+};
+const book : books[]=[
+  {
+    image:"/home_images/alchemist.jpg",
+    title:"The Alchemist",
+    price:"$11.00 USD"
+  },
+  {
+    image:"/home_images/deadbody.jpg",
+    title:"Over My Dead Body",
+    price:"$14.52 USD"
+  },
+  {
+    image:"/home_images/ikigai.jpg",
+    title:"Ikigai",
+    price:"$11.50 USD"
+  },
+  {
+    image:"/home_images/think-grow.jpg",
+    title:"Think and Grow Rich",
+    price:"$12.78 USD"
+  },
+  {
+    image:"/home_images/12rules.jpg",
+    title:"12 Rules for Life",
+    price:"$9.74 USD"
+  },
+  {
+    image:"/home_images/babylon.jpg",
+    title:"The Richest Man in Babylon",
+    price:"$10.49 USD"
+  },
+  {
+    image:"/home_images/almanack.jpg",
+    title:"The Alamanck of Naval Ravikant",
+    price:"$10.36 USD"
+  },
+  {
+    image:"/home_images/psychology.jpg",
+    title:"The Psychology of Money",
+    price:"$6.40 USD"
+  },
+]
+type cards= {
+  title:string;
+  description:string;
+  color:string;
+  img_url:string;
+}
+const card:cards[]=[
+  {
+    title:"Free Shipping for Book Lovers",
+    description:"Explore & Shop Books Now",
+    color:"#bbb2cf",
+    img_url:"/jenny.jpg"
 
+  },
+  {
+    title:"Return with Confidence",
+    description:"Within 20 Days Return",
+    color:"#ca9da2",
+    img_url:"/jenny.jpg"
+  },
+  {
+    title:"Efficient Book Delivery",
+    description:"Fast & Efficient Service",
+    color:"#e4b976",
+    img_url:"/jenny.jpg"
+  }
+]
 
 
 const page = () => {
@@ -122,20 +178,40 @@ const page = () => {
         </div>
 
       </div>
-      <div className="facility r_container">
-        <div className="facility-card">
-          <h2>Free Shipping for Book Lovers</h2>
-          <p>Explore & Shop Books Now </p>
-
-        </div>
-      </div>
+      <div className="facility r_container" style={{display:"flex", gap:"20px"}}/>
+      
+         {card.map((cards,index)=>(
+          <div key={index} style={{backgroundColor:cards.color,alignItems:"center",gap:"20px" ,padding:"0 1.5rem",display:"inline-block"}}>
+            <div>
+              <h4>{cards.title}</h4>
+              <p>{cards.description}</p>
+            </div>
+            <div>
+              <img  width={200} height={200}src={`${cards.img_url}`} alt="" style={{borderRadius:"50%"}}/>
+            </div>
+          </div>
+         ))}
+      
 
       <div className="r-container trending-books">
         <div className="latest-coll trending">
           Latest Collection
         </div>
         <h1>New Arrival Books</h1>
-        <div className="book-store">
+        {book.map((books,index)=>(
+          <div className="book-store">
+            <div className="book-card">
+         <img src={`${books.image}`} alt={`${books.image}`} width={300} height={400}/>
+         <h4>{books.title}</h4>
+         <p>{books.price}</p>
+         </div>
+
+
+          </div>
+          
+
+        ))}
+        {/* <div className="book-store">
         <div className="book-card">
          <img src="/home_images/alchemist.jpg" alt="alchemist" width={300} height={400}/>
          <h4>The Alchemist</h4>
@@ -177,7 +253,7 @@ const page = () => {
          <p>$6.40 USD</p>
          </div>
 
-       </div>
+       </div> */}
 
       </div>
       <div className="next-button">
@@ -187,7 +263,7 @@ const page = () => {
     <div className="featured-book r_container">
       <h1>Featured Book of the Week</h1>
       <div className="featured-info">
-        <img src="/home_images/almanack.jpg" alt="" width={370} height={530} />
+        <img src="/home_images/almanack.jpg" alt="" width={390} height={530} />
         <div className="book-details">
           <h4>The Almanack Of Naval Ravikant</h4>
           <p>Getting rich is not just about luck;happiness is just a  <br />trait we bornwith these.Aspirations may seem out of reach,but bulding wealth and being happy are skills we learn  </p>
@@ -195,25 +271,26 @@ const page = () => {
           <br /> <br /> <br />
           <h4>Eric Jorgenson</h4>
           <p>$10.36 USD</p>
-          {/* <div className="next-button">
-             <a href="/shop" className="next-btn">View All Books<IoMdArrowForward /></a>
-          </div> */}
+          <a href="/shop" className="next-btn">Shop now</a>
         </div>
         <div className="more-books">
-          <div className="books">
-            <img src="/home_images/psychology.jpg" alt=""  width={140} height={200}/>
-            <div>
+          <div className="books-info">
+            <img src="/home_images/psychology.jpg" alt=""  width={160} height={230}/>
+            <div className="book-desc">
             <h4>The Psychology Of <br />Money</h4 >
             <p>$6.40 USD</p>
             </div>
-            <hr />
-            <img src="/home_images/psychology.jpg" alt=""  width={140} height={200}/>
-            <div>
-            <h4>The Psychology Of <br />Money</h4 >
-            <p>$6.40 USD</p>
-            </div>
-
           </div>
+          <hr />
+          <div className="books-info">
+            <img src="/home_images/12rules.jpg" alt=""  width={160} height={230}/>
+            <div className="book-desc">
+            <h4>12 Rules For Life</h4>
+            <p>$6.40 USD</p>
+            </div>
+          </div>  
+
+          
         </div>
       </div>
       </div>  
