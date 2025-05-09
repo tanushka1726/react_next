@@ -131,7 +131,7 @@
 .book-store{
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 2rem;
     
 }
@@ -169,4 +169,25 @@
     height: 20rem;
     width: 25rem;
     margin: 30px;
+}
+.books-info{
+    display: flex;
+}
+.featured-book{
+    background-color:#e5e6e1;
+    height: 50rem;
+    padding-top: 100px;
+}
+.featured-book h1{
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.book-details a{
+    margin-top: 50px;
+}
+.book-desc{
+    padding-left:30px;
+}
+.books-info{
+    margin-bottom:30px ;
 }
