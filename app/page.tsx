@@ -153,25 +153,25 @@ const page = () => {
         <h1>Popular Books</h1>
         <div className="book-store">
           <div className="book-card">
-         <img src="/home_images/psychology.jpg" alt="psychology" width={300} height={400}/>
-         <h4>The Psychology of Money</h4>
-         <p>$6.40 USD</p>
-       </div>
-        <div className="book-card">
-        <img src="/home_images/educated.jpg" alt="educated" width={300} height={400}/>
-        <h4>Educated</h4>
-        <p>$12.96 USD</p>
-       </div>
-       <div className="book-card">
-        <img src="/home_images/crawards_sing.jpg" alt="crawards-sing" width={300} height={400}/>
-        <h4>Where The Crawards Sing</h4>
-        <p>$11.12 USD</p>
-       </div>
-       <div className="book-card">
-        <img src="/home_images/mockingbird.jpg" alt="mockingbird" width={300} height={400}/>
-        <h4>To Kill A Mockingbird</h4>
-        <p>$4.78 USD</p>
-       </div>
+          <img src="/home_images/psychology.jpg" alt="psychology" width={300} height={400}/>
+          <h4>The Psychology of Money</h4>
+          <p>$6.40 USD</p>
+         </div>
+         <div className="book-card">
+         <img src="/home_images/educated.jpg" alt="educated" width={300} height={400}/>
+         <h4>Educated</h4>
+         <p>$12.96 USD</p>
+         </div>
+         <div className="book-card">
+          <img src="/home_images/crawards_sing.jpg" alt="crawards-sing" width={300} height={400}/>
+          <h4>Where The Crawards Sing</h4>
+          <p>$11.12 USD</p>
+          </div>
+         <div className="book-card">
+         <img src="/home_images/mockingbird.jpg" alt="mockingbird" width={300} height={400}/>
+         <h4>To Kill A Mockingbird</h4>
+         <p>$4.78 USD</p>
+         </div>
        </div>
        <div className="next-button">
              <a href="/shop" className="next-btn">View All<IoMdArrowForward /></a>
@@ -199,14 +199,12 @@ const page = () => {
         </div>
         <h1>New Arrival Books</h1>
         {book.map((books,index)=>(
-          <div className="book-store">
-            <div className="book-card">
-         <img src={`${books.image}`} alt={`${books.image}`} width={300} height={400}/>
-         <h4>{books.title}</h4>
-         <p>{books.price}</p>
-         </div>
-
-
+          <div  style={{display:"flex",maxWidth:"100%",marginTop:"2rem"}}>
+            <div style={{marginLeft:"20px"}}>
+            <img src={`${books.image}`} alt={`${books.image}`} width={300} height={400}/>
+            <h4>{books.title}</h4>
+            <p>{books.price}</p>
+            </div>
           </div>
           
 
@@ -257,7 +255,7 @@ const page = () => {
 
       </div>
       <div className="next-button">
-             <a href="/shop" className="next-btn">View All Books<IoMdArrowForward /></a>
+         <a href="/shop" className="next-btn">View All Books<IoMdArrowForward /></a>
       </div>
 
     <div className="featured-book r_container">
