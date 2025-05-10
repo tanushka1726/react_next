@@ -6,7 +6,6 @@ const page = () => {
     <>
     <div>
       <Header />
-      <Footer/>
       
     </div>
     </>
