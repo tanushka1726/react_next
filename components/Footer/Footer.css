@@ -1,43 +1,77 @@
+
 .footer-section{
+    background-color: var(--black);
+    padding: 80px 0 60px 0;
+    color: var(--white);
+}
+.footer_content{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .left-footer-section{
-    width: 80rem;
-    height: 50rem;
-    margin-top: 30px;
-    background-color:black;
-    /* background-color: blue; */
-    color: white;
+    max-width: 765px;
 }
-.left-footer-section span{
-    margin: 60rem 20rem;
-    /* padding: 30px; */
-    font-size: 25px;
-}
-.left-footer-section p{
-    /* margin: 30px; */
-    font-size: 40px;
+.left-footer-section img{
+    filter: invert(1);
 }
 .right-footer-section{
-    background-color: black;
-    height: 50rem;
-    width: 60rem;
-    margin-top: 30px;
-    color: white;
     display: flex;
+    gap: 85px;
 }
-.basic-right-section,.privacy-right-section{
-    /* margin: 12rem 0 30px 18rem; */
-    font-size:16px;
-    font-weight: 500;
-    line-height: 28px;
+.basic-right-section, .privacy-right-section{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
 }
-.privacy-right-section p:hover{
-    opacity: 0.25;
-    cursor: pointer;
+.basic-right-section a, .privacy-right-section a{
+    color: var(--white);
+    text-decoration: none;
 }
-.basic-right-section p:hover{
-    opacity: 0.25;
-    cursor: pointer;
+.footer_heading{
+    font-size: 40px;
+    font-weight: 300;
+    padding: 3rem 0 1.5rem;
+}
 
+.contact_btn{
+    padding: 0.9rem 1.75rem;
+    background: #000;
+    outline: none;
+    border: 1px solid white;
+    color: var(--white);
+    font-family: "Aspekta";
+    border-radius: 28px;
+    transition: all 0.3s ease-in-out;
+}
+.contact_btn:hover{
+    color: var(--black);
+    background: var(--white);
+}
+.contact_btn i{
+    margin-left: 15px;
+}
+.copyright{
+    margin: 6rem 0 0;
+    padding-top: 2.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright p{
+    margin: 0;
+}
+.copyright span{
+    text-decoration: underline;
+}
+.social_icons{
+    display: flex;
+    gap: 12px;
+}
+.social_icons a{
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
 }
