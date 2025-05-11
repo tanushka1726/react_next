@@ -1,0 +1,10 @@
+.category_container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.book_card p{
+    font-weight: 400;
+    padding: 8px 0;
+    font-size: 20px;
+    margin: 0;
+}

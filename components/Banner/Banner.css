@@ -1,17 +1,19 @@
-.about-us-head{
-    display:flex;
+.banner{
     background-color:#e5e6e1;
-    height: 15rem;
-    max-width: 100%;
+    padding: 5rem 0;
+    position:relative;
 }
-.about-us-head h1{
-    margin: 55px 0 40px 40px;
-    font-size: 5rem;
-    font-weight: 100;
+.banner-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
-.about-us-head h5{
-    margin: 6rem 0 0 25rem;
-    font-size: 1.15rem;  
-    font-weight: 100;
-    line-height:20px;
+.banner-content h1{
+    font-weight: 300;
+    font-size: 70px;
+}
+.banner-content p{
+    margin: 0;
+    max-width: 40%;
 }

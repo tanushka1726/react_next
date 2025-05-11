@@ -4,7 +4,7 @@
   font-weight: 300;
 }
 @font-face {
-  font-family: "Aspekta 400";
+  font-family: "Aspekta";
   src: url("/fonts/Aspekta-400.ttf") format("truetype");
   font-weight: 400;
 }
@@ -89,6 +89,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 10px;
+  font-family: "Aspekta";
 }
 
 
@@ -120,4 +121,11 @@ ul, ol {
   max-width: 1336px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.triangle-small {
+  border-bottom: 60px solid var(--white);
+  border-left: 60px solid rgba(255, 255, 255, .6);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

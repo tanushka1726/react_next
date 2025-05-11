@@ -10,7 +10,9 @@
     flex-wrap: wrap;
 }
 .left-footer-section{
-    max-width: 765px;
+    max-width: 60%;
+    width: 100%;
+    padding-bottom: 3rem;
 }
 .left-footer-section img{
     filter: invert(1);
@@ -52,7 +54,7 @@
     margin-left: 15px;
 }
 .copyright{
-    margin: 6rem 0 0;
+    margin: 3rem 0 0;
     padding-top: 2.25rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -74,4 +76,10 @@
     padding: 8px 12px;
     border-radius: 50%;
     border: 1px solid var(--white);
+}
+
+@media (max-width: 767px) {
+    .left-footer-section{
+        max-width: 100%;
+    }
 }

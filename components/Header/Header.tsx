@@ -29,17 +29,17 @@ const page = () => {
           </button>
           <ul className={`dropdown-menu dd_menu ${isOpen ? "show" : ""}`} style={{padding: "10px 0", borderRadius: "0", width:"200px" }}>
             <li>
-              <Link className="dropdown-item" href="/books/self-help">
+              <Link className="dropdown-item" href="/category/self-help">
                 Self Help
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/books/biography">
+              <Link className="dropdown-item" href="/category/biography">
                 Biography
               </Link>
             </li>
             <li>
-              <Link className="dropdown-item" href="/books/novel">
+              <Link className="dropdown-item" href="/category/novel">
                 Novel
               </Link>
             </li>
