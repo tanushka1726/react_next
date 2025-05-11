@@ -1,10 +1,15 @@
-.left-header-elements {
+.headerContainer{
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.navList {
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 14px 20px;
 }
-.left-header-elements a {
+.navList a {
   font-size: 18px;
   align-items: center;
   text-decoration: none;
@@ -12,12 +17,12 @@
   display: flex;
   align-items: center;
 }
-.left-header-elements span {
+.navList span {
   margin: 15px 20px 10px 10px;
   font-weight: 700;
   font-size: 30px;
 }
-.left-header-elements p,
+.navList p,
 span:hover {
   cursor: pointer;
 }
@@ -71,4 +76,78 @@ span:hover {
 }
 .dd_menu a{
   font-weight: 300;
+}
+/* Hide hamburger on large screens */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile nav styles */
+.nav-links-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.hamburger-icon{
+  display: none;
+}
+.overlay{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.mobileMenu{
+  padding: 2.5rem 1.5rem 1rem;
+  background-color: var(--white);
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mobileMenu a{
+  text-decoration: none;
+  color: var(--black);
+  font-size: 18px;
+}
+.mobileMenu > ul{
+  padding-left: 7.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mobileMenu > ul a{
+  font-weight: 400;
+  font-size: 16px;
+
+}
+.book_mobile{
+  font-weight: 500;
+  font-size: 18px;
+}
+.mob_search{
+  padding: 0 0.5rem;
+  border-radius: 30px;
+  margin-bottom: 1.5rem;
+}
+.mob_search input{
+  width: 100%;
+}
+/* On small screens */
+@media (max-width: 990px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .desktop_link, .navList a:not(:first-child){
+    display: none;
+  }
+  .overlay{
+    display: block;
+    height: 100vh;
+    z-index: 8;
+    width: 100%;
+    padding-left: 0;
+  }
 }
