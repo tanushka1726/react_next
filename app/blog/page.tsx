@@ -2,6 +2,7 @@ import React from "react";
 
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
+import Banner from "@/components/Banner/Banner"
 type blogs={
     image:string;
     date:string;
@@ -52,10 +53,8 @@ const blog :blogs[]=[
 const page = () => {
   return (
     <>
-    <div className="blog-collection">
-      <h1>Our Blogs</h1>
-      <h5>In a world that can sometimes feel overwhelming and challenging, <br /> positive thinking offers a ray of hope and a path to a brighter future.</h5>
-    </div>
+    <Banner title="Our Blogs" description="In a world that can sometimes feel overwhelming and challenging, positive thinking offers a ray of hope and a path to a brighter future."/>
+    
     <div className="book-blogs r_container">
         {blog.map((blogs,index)=>(
             <a className="blog-card">

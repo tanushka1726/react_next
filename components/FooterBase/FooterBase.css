@@ -1,0 +1,49 @@
+.footer-base{
+    height: 24rem;
+    background-color:#f8efe5;
+    position: relative;
+}
+.footer-base h1{
+    margin: 7rem 30px 0 60px ;
+}
+.design{
+    position: absolute;
+    left: 15px;
+    bottom:0;
+}
+.fot-section{
+    display: flex;
+}
+.email-section{
+    margin-top: 6rem ;
+    margin-left: 40px;
+}
+.email{
+    display: flex;
+    background-color: var(--white);
+    padding: 5px 5px;
+    border-radius:50px;
+}
+.email p{
+    text-align: center;
+    margin-left: 18px;
+}
+.email svg{
+    margin-top: 5px;
+    margin-left:10px;
+}
+.subscribe{
+    background-color: var(--black);
+    border-radius: 50px;
+    color: var(--white);
+    width: 30%;
+    text-align: center;
+    margin-left:6.5rem;
+    padding: 5px;
+}
+.graphic{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+

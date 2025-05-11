@@ -1,6 +1,7 @@
 import React from "react";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
+import Banner from "@/components/Banner/Banner"
 type books = {
   image: string;
   title: string;
@@ -74,10 +75,7 @@ const page = () => {
   return (
     <>
     
-    <div className="book-collection ">
-      <h1>Our Book Collection</h1>
-      <h5>Explore different collection and discover new perspectives, knowledge,<br /> and inspiration.</h5>
-    </div>
+   <Banner title="Our book Collection" description="Explore different collection and discover new perspectives, knowledge, and inspiration."/>
     <div className="book-store r_container">
     {book.map((books,index)=>(
             <div  className="book-card">

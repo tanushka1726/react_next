@@ -88,19 +88,9 @@
     width: 200px;
     height: 200px;
 }
-.biography{
-    background-color: var(--purple);
-}
-.novel{
-    background-color:  var(--pink);
-}
-.self-help{
-    background-color: var(--yellow);
-}
 .side-bar h3{
     margin: 20px;
     color: var(--white);
-
 }
 .shop-now{
     background-color: var(--white);

@@ -1,4 +1,5 @@
 import React from "react";
+import FooterBase from "@/components/FooterBase/FooterBase"
 
 import "./page.css";
 // import "./globals.css"
@@ -331,8 +332,7 @@ const page = () => {
       <div className="next-button">
              <a href="/blog" className="next-btn">View All<IoMdArrowForward /></a>
         </div>
-
-     
+        <FooterBase/>
     </>
   );
 };
