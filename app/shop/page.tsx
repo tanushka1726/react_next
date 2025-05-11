@@ -3,79 +3,95 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
+type books = {
+  image: string;
+  title: string;
+  price: string;
+};
+const book : books[]=[
+  {
+    image:"/shop_images/psychology.jpg",
+    title:"The Psychology of Money",
+    price:"$6.40 USD"
+  },
+  {
+    image:"/shop_images/educated.jpg",
+    title:"Educated",
+    price:"$12.96 USD"
+  },
+  {
+    image:"/shop_images/crawards_sing.jpg",
+    title:"Where The Crawards Sing",
+    price:"$11.12 USD",
+  },
+  {
+    image:"/shop_images/mockingbird.jpg",
+    title:"To Kill A Mockingbird",
+    price:"$4.78 USD"
+  },
+  {
+    image:"/shop_images/stealLike.jpg",
+    title:"Steal Like An Artist",
+    price:"$16.93 USD"
+  },
+  {
+    image:"/shop_images/deadbody.jpg",
+    title:"Over My Dead Body",
+    price:"$14.52 USD"
+  },
+  {
+    image:"/shop_images/1984.jpg",
+    title:"1984",
+    price:"$11.11 USD"
+  },
+  {
+    image:"/shop_images/tuesdays.jpg",
+    title:"Tuesdays With Morrie",
+    price:"$12.96 USD",
+  },
+  {
+    image:"/shop_images/daVinciCode.jpg",
+    title:"The Da Vinci Code",
+    price:"$14.50 USD"
+  },
+  {
+    image:"/shop_images/alchemist.jpg",
+    title:"The Alchemist",
+    price:"$11.00 USD"
+  },
+  {
+    image:"/shop_images/titan.jpg",
+    title:"Titan:The life of Jhon D.",
+    price:"$6.00USD",
+  },
+  {
+    image:"/shop_images/barack_obama.jpg",
+    title:"A Promised Land",
+    price:"$8.71 USD"
+  }
+  
+]
+
 const page = () => {
   return (
     <>
     <Header/>
-    <div className="book-collection">
+    <div className="book-collection ">
       <h1>Our Book Collection</h1>
       <h5>Explore different collection and discover new perspectives, knowledge,<br /> and inspiration.</h5>
     </div>
-    <div className="book-store">
-      <div className="book-card">
-        <img src="/shop_images/psychology.jpg" alt="psychology" width={300} height={400}/>
-        <h4>The Psychology of Money</h4>
-        <p>$6.40 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/educated.jpg" alt="educated" width={300} height={400}/>
-        <h4>Educated</h4>
-        <p>$12.96 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/crawards_sing.jpg" alt="crawards-sing" width={300} height={400}/>
-        <h4>Where The Crawards Sing</h4>
-        <p>$11.12 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/mockingbird.jpg" alt="mockingbird" width={300} height={400}/>
-        <h4>To Kill A Mockingbird</h4>
-        <p>$4.78 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/stealLike.jpg" alt="stealLike" width={300} height={400}/>
-        <h4>Steal Like An Artist</h4>
-        <p>$16.93 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/deadbody.jpg" alt="deadbody" width={300} height={400}/>
-        <h4>Over My Dead Body</h4>
-        <p>$12.96 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/1984.jpg" alt="1984" width={300} height={400}/>
-        <h4>1984</h4>
-        <p>$11.11 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/tuesdays.jpg" alt="tuesdays" width={300} height={400}/>
-        <h4>Tuesdays With Morrie</h4>
-        <p>$12.96 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/daVinciCode.jpg" alt="daVinciCode" width={300} height={400}/>
-        <h4>The Da Vinci Code</h4>
-        <p>$14.50 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/alchemist.jpg" alt="alchemist" width={300} height={400}/>
-        <h4>The Alchemist</h4>
-        <p>$11.00 USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/titan.jpg" alt="titan" width={300} height={400}/>
-        <h4>Titan:The life of Jhon D. <br /> Rockfeller,Sr.</h4>
-        <p>$6.00USD</p>
-      </div>
-      <div className="book-card">
-        <img src="/shop_images/barack_obama.jpg" alt="barack_obama" width={300} height={400}/>
-        <h4>A Promised Land</h4>
-        <p>$8.71 USD</p>
-      </div>
+    <div className="book-store r_container">
+    {book.map((books,index)=>(
+            <div  className="book-card">
+              <img src={`${books.image}`} alt="" width={300} height={400}/>
+              <h5>{books.title}</h5>
+              <p>{books.price}</p>
+            </div>
+          ))}
       
     </div>
     <div className="next-button">
-      <a href="/shop_page2"className="next-btn">Next<IoMdArrowForward/></a>
+      <a href=""className="next-btn">Next<IoMdArrowForward/></a>
     </div>
     
     {/* <Footer/> */}

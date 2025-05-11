@@ -6,7 +6,7 @@ const page = () => {
     <>
     <div>
       <Header />
-      <Banner/>
+      <Footer/>
       
     </div>
     </>

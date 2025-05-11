@@ -31,9 +31,10 @@
 .book-card{
     margin-left: 20px;
 }
-.book-card h4,p{
-    font-weight: 300;
+.book-card h5{
     line-height: 25px;
+    margin-top: 20px;
+
 }
 
 .next-btn{

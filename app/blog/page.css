@@ -29,6 +29,14 @@
 .blog-card{
     display: flex;
     margin: 50px 0 50px 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+.blog-card:hover{
+    cursor: pointer;
+}
+.blog-card a{
+    color: var(--black);
 }
 .blog-info{
     margin: 40px 0 0 40px ;

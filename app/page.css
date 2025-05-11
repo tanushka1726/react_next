@@ -124,19 +124,23 @@
     margin: 20px;
     border-radius: 50px;
 }
-.trending-books h1{
+.trending-books h1,.blog h1{
     font-weight: 200;
     margin-left: 20px
 }
 .book-store{
     max-width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-top: 2rem;
     
 }
 .book-card{
     margin-left: 20px;
+}
+.book-card h5{
+    margin-top: 20px;
+
 }
 .next-btn{
     padding: 12px 30px;
@@ -162,17 +166,13 @@
 .facility{
     height: 15rem;
 }
-.featured-info{
-    display: flex;
-}
+
 .book-details{
     height: 20rem;
     width: 25rem;
     margin: 30px;
 }
-.books-info{
-    display: flex;
-}
+
 .featured-book{
     background-color:#e5e6e1;
     height: 50rem;
@@ -182,12 +182,35 @@
     margin-bottom: 50px;
     font-weight: 500;
 }
-.book-details a{
-    margin-top: 50px;
-}
-.book-desc{
+.book-desc {
     padding-left:30px;
 }
 .books-info{
     margin-bottom:30px ;
+}
+.books,.blog-section,.side-section,.books-info,.featured-info{
+    display:flex;
+}
+.books img{
+    margin-bottom: 30px;
+}
+.blog{
+    margin-top: 6rem;
+}
+.blog-right-section{
+    width: 50%;
+}
+.side-section{
+    margin-left: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.blog-side-info{
+    margin: 60px 20px 20px 30px;
+}
+.blog-section{
+    margin-top: 30px;
+}
+.blog-right-section p{
+    margin-top: 20px ;
 }
