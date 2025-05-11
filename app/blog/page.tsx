@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/components/Header/Header";
+
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
 type blogs={
@@ -52,7 +52,6 @@ const blog :blogs[]=[
 const page = () => {
   return (
     <>
-    <Header/>
     <div className="blog-collection">
       <h1>Our Blogs</h1>
       <h5>In a world that can sometimes feel overwhelming and challenging, <br /> positive thinking offers a ray of hope and a path to a brighter future.</h5>

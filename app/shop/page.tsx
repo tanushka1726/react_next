@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
 type books = {
@@ -75,7 +73,7 @@ const book : books[]=[
 const page = () => {
   return (
     <>
-    <Header/>
+    
     <div className="book-collection ">
       <h1>Our Book Collection</h1>
       <h5>Explore different collection and discover new perspectives, knowledge,<br /> and inspiration.</h5>
@@ -93,8 +91,6 @@ const page = () => {
     <div className="next-button">
       <a href=""className="next-btn">Next<IoMdArrowForward/></a>
     </div>
-    
-    {/* <Footer/> */}
     </>
   )
 };

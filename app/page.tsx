@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+
 import "./page.css";
 // import "./globals.css"
 import { IoMdArrowForward } from "react-icons/io";
@@ -133,7 +132,6 @@ const card:cards[]=[
 const page = () => {
   return (
     <>
-      <Header />
       <div className="first-section">
         <div className="first-section-left">
           <div className="first-section-explore">
@@ -334,7 +332,7 @@ const page = () => {
              <a href="/blog" className="next-btn">View All<IoMdArrowForward /></a>
         </div>
 
-      <Footer />
+     
     </>
   );
 };

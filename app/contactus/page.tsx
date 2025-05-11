@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+
 import Banner from "@/components/Banner/Banner";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
@@ -8,12 +7,7 @@ import { GoPlus } from "react-icons/go";
 const page = () => {
   return (
     <>
-    
-      <Header />
-      {/* <Banner/> */}
-
-
-      <div className="customer-support r_container">
+    <div className="customer-support r_container">
         <div className="left-section-support">
             <div className="get-touch">Get in Touch</div>
               <h1>Cutomer Support</h1> 
@@ -119,8 +113,6 @@ const page = () => {
 
         </div>
         </div>
-
-      <Footer/>
       
     
     </>

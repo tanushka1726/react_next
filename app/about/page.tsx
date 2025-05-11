@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "@/components/Header/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // basic styles
 import React, { useRef } from "react";
@@ -69,7 +68,7 @@ const page = () => {
 
   return (
     <>
-      <Header />
+      
       {/* <Banner title={}/> */}
       <div className="about-us-head">
         <h1>About us</h1>
