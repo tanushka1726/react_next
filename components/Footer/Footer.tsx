@@ -44,15 +44,15 @@ const page = () => {
             <div className="right-footer-section">
               <div className="basic-right-section">
                 <Link href="/">Home</Link>
-                <Link href="/">About</Link>
-                <Link href="/">Shop</Link>
-                <Link href="/">Review</Link>
-                <Link href="/">Blog</Link>
-                <Link href="/">Category</Link>
+                <Link href="/about">About</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/customer-review">Review</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/category-list">Category</Link>
               </div>
               <div className="privacy-right-section">
-                <Link href="/">Privacy Policy</Link>
-                <Link href="/">Return Policy</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="/return-policy">Return Policy</Link>
               </div>
             </div>
           </div>

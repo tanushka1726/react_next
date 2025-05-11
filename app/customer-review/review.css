@@ -1,0 +1,41 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 3.5rem 0;
+}
+.review_card{
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+    width: 30%;
+}
+.review_overlay{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+}
+.review_info{
+    padding-left: 44px;
+    padding-right: 44px;
+    position: absolute;
+    top: 12%;
+    color: var(--white);
+}
+.review_image{
+    width: 100%;
+    /* height: 484px; */
+}
+
+@media (max-width: 1200px) {
+    .review_card{
+        width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .review_card{
+        width: 100%;
+    }
+}
