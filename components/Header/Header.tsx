@@ -1,33 +1,38 @@
 "use client";
 import React, { useState } from "react";
 import "./Header.css";
-import { IoSearchOutline } from "react-icons/io5";
-import { IoBag } from "react-icons/io5";
+import { IoSearchOutline, IoBag } from "react-icons/io5";
+import { CgMenuRightAlt } from "react-icons/cg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
   return (
-    <div style={{ borderBottom: "1px solid black" }}>
-      <div className="left-header-elements r_container">
-        <a href="/">
+    <header className="headerContainer">
+      <ul className="navList r_container">
+        <Link href="/">
           <img src="/header_images/logo.svg" alt="" />
-        </a>
-        {/* <a href="/books">Books</a> */}
-        <div className="dropdown" onClick={toggleDropdown}>
+        </Link>
+        {/* <Link href="/books">Books</Link> */}
+        <div className="dropdown desktop_link" onClick={toggleDropdown}>
           <button
             className="dropdown-toggle btn_books"
             data-bs-toggle="dropdown "
             aria-expanded={isOpen}
             style={{ cursor: "pointer", userSelect: "none" }}
           >
-            Books {isOpen ? <IoIosArrowUp size={20}/> : <IoIosArrowDown size={20}/>}
+            Books{" "}
+            {isOpen ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20} />}
           </button>
-          <ul className={`dropdown-menu dd_menu ${isOpen ? "show" : ""}`} style={{padding: "10px 0", borderRadius: "0", width:"200px" }}>
+          <ul
+            className={`dropdown-menu dd_menu ${isOpen ? "show" : ""}`}
+            style={{ padding: "10px 0", borderRadius: "0", width: "200px" }}
+          >
             <li>
               <Link className="dropdown-item" href="/category/self-help">
                 Self Help
@@ -46,12 +51,12 @@ const page = () => {
           </ul>
         </div>
 
-        <a href="/shop">Shop</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
-        <a href="/contactus">Contact us</a>
+        <Link href="/shop">Shop</Link>
+        <Link href="/about">About</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/contact">Contact us</Link>
         <div className="right-header-elements">
-          <div className="search-bar">
+          <div className="search-bar desktop_link">
             <IoSearchOutline size={25} />
             <input type="text" placeholder="Search book.." />
           </div>
@@ -59,8 +64,43 @@ const page = () => {
             <IoBag />
           </div>
         </div>
-      </div>
-    </div>
+        <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          <CgMenuRightAlt size={25} />
+        </div>
+      </ul>
+      <ul className="overlay">
+        <div className="mobileMenu">
+          <div className="search-bar mob_search">
+            <IoSearchOutline size={25} />
+            <input type="text" placeholder="Search book.." />
+          </div>
+          <li className="book_mobile">Book</li>
+          <ul>
+            <li>
+              <Link href="/category/biography">Biography</Link>
+            </li>
+            <li>
+              <Link href="/category/novel">Novel</Link>
+            </li>
+            <li>
+              <Link href="/category/self-help">Self Help</Link>
+            </li>
+          </ul>
+          <li>
+            <Link href="/shop">Shop</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact us</Link>
+          </li>
+        </div>
+      </ul>
+    </header>
   );
 };
 export default page;
