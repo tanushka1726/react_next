@@ -4,6 +4,7 @@ import FooterBase from "@/components/FooterBase/FooterBase"
 import "./page.css";
 // import "./globals.css"
 import { IoMdArrowForward } from "react-icons/io";
+import { LuRadius } from "react-icons/lu";
 type explores = {
   image:string;
   title:string;
@@ -112,20 +113,20 @@ const card:cards[]=[
     title:"Free Shipping for Book Lovers",
     description:"Explore & Shop Books Now",
     color:"#bbb2cf",
-    img_url:"/jenny.jpg"
+    img_url:"/svg1.svg"
 
   },
   {
     title:"Return with Confidence",
     description:"Within 20 Days Return",
     color:"#ca9da2",
-    img_url:"/jenny.jpg"
+    img_url:"/svg2.svg"
   },
   {
     title:"Efficient Book Delivery",
     description:"Fast & Efficient Service",
     color:"#e4b976",
-    img_url:"/jenny.jpg"
+    img_url:"/svg3.svg"
   }
 ]
 
@@ -235,9 +236,19 @@ const page = () => {
         </div>
       </div>
       <div className="facility r_container">
-        <div className="facility-card">
-          <h2>Free Shipping for Book Lovers</h2>
-          <p>Explore & Shop Books Now </p>
+        <div className="facility-card" style={{display:"flex",gap:"30px"}}>
+          {card.map((cards,index)=>(
+            <div key={index} style={{backgroundColor:cards.color,alignItems:"center",gap:"15px",padding:"50px 1.15rem",display:"flex"}}>
+            <div style={{width:"50%"}}>
+              <h4>{cards.title}</h4>
+              <p>{cards.description}</p>
+            </div>
+            <div>
+              <img src={`${cards.img_url}`} alt="" width={150} height={150} style={{borderRadius:"50%"}}/>
+            </div>
+            </div>
+          ))}
+
 
         </div>
       </div>

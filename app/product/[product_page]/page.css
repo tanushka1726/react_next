@@ -1,0 +1,57 @@
+.book{
+    display: flex;
+    margin-top: 4rem;
+    padding: 30px;
+}
+.book-info{
+    margin-top: 5rem;
+    padding: 5rem;
+}
+.cart-info{
+    display: flex;
+    margin: 30px;
+}
+.number{
+    margin-right:30px;
+    padding: 10px 30px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+.add{
+    background-color:var(--black);
+    color: var(--white);
+    border-radius:50px ;
+    padding: 10px 30px;
+    text-align: center;
+}
+.book-info h4 span{
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: silver;
+}
+
+.description{
+    margin-top: 5rem;
+}
+.similar-books{
+    height: 40rem;
+}
+.similar-books h1{
+    font-weight: 200;
+    margin-left: 20px;
+    margin-top : 4rem;
+}
+.book-store{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+}
+.book-card{
+    margin-left: 20px;
+}
+.book-card h5{
+    margin-top: 20px;
+
+}
