@@ -1,10 +1,14 @@
 import React from "react";
+import Banner from "@/components/Banner/Banner"
 
 const page = () => {
   return (
+    <>
+    <Banner title="Return Policy" description="At our online store, we value your satisfaction and want to ensure that you have a smooth and hassle-free shopping experience."/>
     <div className="page-wrapper">
+    
       <div className="policy-wrap">
-        <div className="container w-container">
+        <div className="container w-container ">
           <h4>Introduction</h4>
           <p>
             Cras auctor nisl non ornare pellentesque orci leo congue et vel
@@ -133,6 +137,7 @@ const page = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
