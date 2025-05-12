@@ -6,6 +6,7 @@
 .first-section {
   display: flex;
   background-color: #e5e6e1;
+  gap: 25px;
 }
 .first-section-explore {
   margin: 12rem 0 0 15px;
