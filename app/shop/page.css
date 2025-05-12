@@ -25,8 +25,7 @@
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 100rem;
-    
+    justify-content: center;
 }
 .book-card{
     margin-left: 20px;
@@ -55,7 +54,6 @@
     
 }
 .next-button{
-    margin-left: 72rem;
     display: inline-block;
     height: 15rem;
 }

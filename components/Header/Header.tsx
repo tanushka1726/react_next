@@ -63,12 +63,13 @@ const page = () => {
           <div className="header-cart-icon">
             <IoBag />
           </div>
-        </div>
-        <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
           <CgMenuRightAlt size={25} />
         </div>
+        </div>
+       
       </ul>
-      <ul className="overlay">
+      <ul className={`overlay ${menuOpen ? 'open' : ''}`}>
         <div className="mobileMenu">
           <div className="search-bar mob_search">
             <IoSearchOutline size={25} />
