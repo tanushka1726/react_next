@@ -252,41 +252,43 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="second-section">
-        <div className="community-left">
-          <img
-            src="/home_images/community1.jpg"
-            alt="community"
-            width={330}
-            height={350}
-          />
-          <h1>
-            Introducing Our Bookstore and <br /> Community
-          </h1>
-          <p>
-            Discover our bookstore and community, where stories unfold and
-            connections flourish.
-          </p>
-        </div>
-
-        <div className="community-right">
-          <img
-            src="/home_images/community2.jpg"
-            alt="community"
-            width={600}
-            height={700}
-          />
-          <p>
-            Welcome to Book Store: Empowering Minds Through Reading! We believe
-            in the transformative power of books and their ability to shape and
-            inspire individuals. Our mission is to create a vibrant and
-            inclusive community that celebrates the joy of reading and
-            encourages personal growth.
-          </p>
-          <a href="/about" className="next-btn">
-            About us
-            <IoMdArrowForward />
-          </a>
+      <div className="r_container">
+      <div className="about-wrap">
+          <div className="about-head">
+            <div className="about-img-small"><img
+                src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg"
+                loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 719px) 94vw, (max-width: 767px) 676px, 24vw"
+                srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg 676w"
+                alt="About Image" /></div>
+            <div className="about-heading">
+              <h2 className="about-title">Introducing Our Bookstore and Community</h2>
+              <div className="body-small">Discover our bookstore and community, where stories unfold and connections
+                flourish.</div>
+            </div>
+          </div>
+          <div className="about-data-wrap">
+            <div className="about-image-wrap">
+              <div className="about-img-big"><img
+                  src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg"
+                  loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, 48vw"
+                  srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-800.jpg 800w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg 1202w"
+                  alt="About Image" /></div>
+            </div>
+            <div className="about-info">
+              <p className="about-text">Welcome to Book Store: Empowering Minds Through Reading! We believe in the
+                transformative power of books and their ability to shape and inspire individuals. Our mission is to
+                create a vibrant and inclusive community that celebrates the joy of reading and encourages personal
+                growth.</p>
+              <div className="button-wrap"><a data-w-id="790d5147-5340-d65e-fa0e-a4082775f6ae" href="about-us.html"
+                  className="primary-btn w-inline-block">
+                  <div>About us</div><img
+                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
+                    loading="eager" style={{display:"block"}} alt="Arrow" className="default-btn-arrow" /><img
+                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
+                    loading="eager" style={{display:"none"}} alt="Arrow" className="hover-btn-arrow" />
+                </a></div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="explore-category r_container">

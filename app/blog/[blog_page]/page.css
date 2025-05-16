@@ -1,8 +1,10 @@
-.first-section{
+/* .first-section{
     display:flex;
-    height: 40rem;
-    background-color: #e5e6e1;
+    
 
+}
+.blog_main{
+    background-color: #e5e6e1;
 }
 .discover{
     border:1px solid var(--black);
@@ -22,7 +24,7 @@
 .right-side-discover{
     margin-top: 7rem;
     margin-left: 20px;
-}
+} */
 .second-section{
     margin-top: 7rem;
     position: relative;

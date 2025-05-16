@@ -92,7 +92,11 @@ p {
   font-family: "Aspekta";
 }
 
-
+img, svg {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
 
 blockquote {
   border-left: 5px solid #e2e2e2;

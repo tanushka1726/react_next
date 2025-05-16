@@ -1,12 +1,11 @@
-// blog ka specific page yaha banega aur iska banner alag tarah se design hoga, normal vaale ki tarah Nothing_You_Could_Do.//
-// .
+
 import React from "react";
 import "./page.css"
-
+import BlogBanner from "@/components/Banner/BlogBanner";
 const page = ()=>{
     return(
         <>
-        <div className="first-section r_container">
+        {/* <div className="first-section r_container">
             <div className="left-side-discover">
             <div className="discover">Discover Inspiration</div>
             <h1>Books for Personal Growth <br />Sand elf-Discovery</h1>
@@ -15,7 +14,8 @@ const page = ()=>{
             <div className="right-side-discover">
                 <img src="/self-discover1.jpg" alt="" height={400} width={670}/>
             </div>
-        </div>
+        </div> */}
+        <BlogBanner title="Books for Personal Growth Sand elf-Discovery" img="/self-discover1.jpg" />
         <div className="second-section">
             <div className="mid-section1">
              <p>Our user-friendly website ensures a seamless browsing and shopping experience. You can easily search for specific titles, authors, or genres, or simply browse through our curated recommendations.  Shop your favorite reads anytime, anywhere, and let the captivating world of books accompany you wherever you go.</p>

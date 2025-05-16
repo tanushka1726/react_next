@@ -317,3 +317,72 @@
 .blog-right-section p {
   margin-top: 20px;
 }
+
+.about-wrap {
+  grid-column-gap: 15px;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+;
+}
+.about-head {
+  grid-row-gap: 100px;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 50%;
+  display: flex
+;
+}
+.about-img-small {
+  background-color: #639400;
+  width: 100%;
+  max-width: 50%;
+}
+.about-heading {
+  width: 100%;
+  max-width: 100%;
+}
+.about-title {
+  margin-bottom: 15px;
+}
+.body-small {
+  color: var(--body);
+  font-family: "Aspekta 400", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+}
+.about-data-wrap {
+  width: 100%;
+  max-width: 50%;
+  margin-top: 90px;
+}
+.about-image-wrap {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-content: space-between;
+  display: flex
+;
+}
+.about-img-big {
+  background-color: var(--bg);
+  width: 100%;
+  max-width: 100%;
+}
+.about-info {
+  margin-top: 30px;
+}
+.about-text {
+  color: var(--body);
+  margin-bottom: 40px;
+  font-family: "Aspekta 400", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+}
+.button-wrap {
+  align-items: center;
+  display: flex
+;
+}
