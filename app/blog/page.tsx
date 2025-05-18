@@ -71,7 +71,7 @@ const page = () => {
          
          
           <div className="next-button" >
-              <a href="/blog" className="next-btn">Next<IoMdArrowForward /></a>
+              <Link href="/blog" className="next-btn">Next<IoMdArrowForward /></Link>
         </div>
     </div>
         

@@ -28,7 +28,7 @@ const navItems: NavItem[] = [
   { label: 'Contact us', href: '/contact' },
 ];
 
-const page = () => {
+const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -125,4 +125,4 @@ const page = () => {
     </header>
   );
 };
-export default page;
+export default Page;

@@ -7,6 +7,7 @@ import { GoPlus } from "react-icons/go";
 const page = () => {
   return (
     <>
+    <Banner title="Get in Touch" description="Connect with us and share your thoughts, questions, or feedback. We're here to assist you!" />
     <div className="customer-support r_container">
         <div className="left-section-support">
             <div className="get-touch">Get in Touch</div>

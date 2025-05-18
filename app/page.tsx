@@ -4,7 +4,8 @@ import FooterBase from "@/components/FooterBase/FooterBase";
 import "./page.css";
 // import "./globals.css"
 import { IoMdArrowForward } from "react-icons/io";
-import { LuRadius } from "react-icons/lu";
+import Link from "next/link";
+// import { LuRadius } from "react-icons/lu";
 type explores = {
   image: string;
   title: string;
@@ -246,7 +247,7 @@ const page = () => {
               </div>
               <p className="hr-text">
                 Find captivating stories, knowledge, and adventures. From
-                classics to bestsellers, there's something for everyone.
+                classics to bestsellers, there&apos;s something for everyone.
               </p>
             </div>
           </div>
@@ -480,10 +481,10 @@ const page = () => {
         </div>
       </div>
       <div className="next-button">
-        <a href="/blog" className="next-btn">
+        <Link href="/blog" className="next-btn">
           View All
           <IoMdArrowForward />
-        </a>
+        </Link>
       </div>
 
       <FooterBase />

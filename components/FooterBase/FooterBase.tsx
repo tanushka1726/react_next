@@ -8,7 +8,7 @@ const page = () => {
         <div className="fot-section">
           <h1>Start Your Reading <br />Journey Now!</h1>
           <div className="email-section">
-            <p>Subscribe for Readster's latest news, updates, and curated <br /> content </p>
+            <p>Subscribe for Readster&apos;s latest news, updates, and curated <br /> content </p>
             <div className="email">
               <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg_">
                 <path d="M12.7499 15.873H5.24988C2.99988 15.873 1.49988 14.748 1.49988 12.123V6.87305C1.49988 4.24805 2.99988 3.12305 5.24988 3.12305H12.7499C14.9999 3.12305 16.4999 4.24805 16.4999 6.87305V12.123C16.4999 14.748 14.9999 15.873 12.7499 15.873Z" stroke="black" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />

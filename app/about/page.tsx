@@ -8,18 +8,18 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 // import Banner from "@components/Banner/Banner";
 import "./page.css";
-import Image from "next/image";
+// import Image from "next/image";
 import FooterBase from "@/components/FooterBase/FooterBase";
 import Banner from "@/components/Banner/Banner"
 
 import { Swiper as SwiperCore } from "swiper";
 
-const page = () => {
+const Page = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const goNext = () => swiperRef.current?.slideNext();
   const goPrev = () => swiperRef.current?.slidePrev();
-  const goTo = (index: number) => swiperRef.current?.slideToLoop(index);
+  // const goTo = (index: number) => swiperRef.current?.slideToLoop(index);
 
 type reviewType = {
   img: string;
@@ -83,7 +83,7 @@ const reviewCards : reviewType[] = [
             At Readster, we believe in the power of literature to inspire,
             educate, and entertain. As passionate bookworms ourselves, we have
             curated a vast collection of titles spanning various genres,
-            ensuring there's something for every reader. Whether you're a fan of
+            ensuring there&apos;s something for every reader. Whether you&apos;re a fan of
             gripping mysteries, heartwarming romances, thought-provoking
             non-fiction, or captivating fantasy worlds, our book store is your
             haven. We carefully select each book, prioritizing quality,
@@ -392,4 +392,4 @@ const reviewCards : reviewType[] = [
     </>
   );
 };
-export default page;
+export default Page;
