@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "@/components/Banner/Banner";
 import "./review.css"
-import Image from "next/image";
 type reviewType = {
   img: string;
   heading: string;

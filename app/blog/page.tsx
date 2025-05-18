@@ -3,6 +3,7 @@ import React from "react";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
 import Banner from "@/components/Banner/Banner"
+import Link from "next/link";
 type blogs={
     image:string;
     date:string;
@@ -20,33 +21,33 @@ const blog :blogs[]=[
         image:"/bolg_images/blog2.jpg",
         date:"July 20,2023",
         title:"Discovering Strengths and Embracing change",
-        info:"These captivating stories chronicle the lives of individuals who have faced adversity head-on,overcome challenges,and emerged stronger than ever"
+        info:"These captivating stories chronicle the lives of individuals who have faced adversity head-on,overcome challenges, and emerged stronger than ever"
     },
     {
         image:"/bolg_images/blog3.jpg",
         date:"July 20,2023",
         title:"Books of Personal Growth and Self-Discovery",
-        info:"Books of personal growth and self discovery are powerful tools that can help individuals unlock their potential,gain self-awareness,and create positive changes  in their lives"
+        info:"Books of personal growth and self discovery are powerful tools that can help individuals unlock their potential,gain self-awareness, and create positive changes  in their lives"
 
     },
     {
         image:"/bolg_images/blog4.jpg",
         date:"July 20,2023",
-        title:"Shop Your Favourite Reads Anytime,Anywhere books",
-        info:"Shop your favourite reads anytime,anywhere with our convenient online bookstore.With just a few clicks,you can explore new words,gain knowledge,and induldge in captivating stories",
+        title:"Shop Your Favourite Reads Anytime, Anywhere books",
+        info:"Shop your favourite reads anytime, anywhere with our convenient online bookstore.With just a few clicks,you can explore new words, gain knowledge,and induldge in captivating stories",
 
     },
     {
         image:"/bolg_images/blog5.jpg",
         date:"July 20,2023",
         title:"Unleasing the Power of Positive thinking",
-        info:"Positive is not about denying reality or ignoring negative situations.Instead,it's about focusing on the possiblities,finding the silver lining,and maintaining a hopeful attitude"
+        info:"Positive is not about denying reality or ignoring negative situations. Instead, it's about focusing on the possiblities, finding the silver lining,and maintaining a hopeful attitude"
 
     },
     {
         image:"/bolg_images/blog6.jpg",
         date:"July 20,2023",
-        title:"Books to Inspire,Motivate,and Unleash Your Inner Artist",
+        title:"Books to Inspire, Motivate, and Unleash Your Inner Artist",
         info:"Our coolection of books is a valuable resource for nuturing your artistic growth and expanding your creative horizons"
     }
 ]
@@ -57,18 +58,18 @@ const page = () => {
     
     <div className="book-blogs r_container">
         {blog.map((blogs,index)=>(
-            <a className="blog-card">
-                <img src={`${blogs.image}`} alt="" width={530} height={400}/>
+            <Link href={"/"}  className="blog-card" key={index}>
+                <img src={`${blogs.image}`} alt=""/>
                 <div className="blog-info">
                     <h4>{blogs.date}</h4>
                     <h1>{blogs.title}</h1>
                     <h4>{blogs.info}</h4>
-                    <a href="">Read More<IoMdArrowForward /></a>
+                    <span >Read More<IoMdArrowForward /></span>
                 </div>
-            </a>
+            </Link>
         ))}
-          <hr />
-          <br /> <br />
+         
+         
           <div className="next-button" >
               <a href="/blog" className="next-btn">Next<IoMdArrowForward /></a>
         </div>

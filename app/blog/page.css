@@ -1,77 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.book-blogs {
+    margin-top: 8rem;
+    max-width: 100%;
 }
 
-.blog-collection{
-    display:flex;
-    background-color:#e5e6e1;
-    height: 15rem;
-    max-width: 100%;
-}
-.blog-collection h1{
-    margin: 60px 20px 0 40px;
-    font-size: 5rem;
-    font-weight: 200;
-}
-.blog-collection h5{
-    margin: 6rem 0 0 25rem;
-    font-size: 1.15rem;  
-    font-weight: 200;
-    line-height:30px;
-}
-.book-blogs{
-    margin-top: 8rem;
-    height: 180rem;
-    max-width: 100%;
-}
-.blog-card{
+.blog-card {
     display: flex;
-    margin: 50px 0 50px 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
     text-decoration: none;
     color: var(--black);
+    gap: 4rem;
 }
-.blog-card:hover{
+
+.blog-card:hover {
     cursor: pointer;
 }
-.blog-card a{
+
+.blog-card img,
+.blog-info {
+    max-width: 48%;
+}
+
+.blog-card a {
     color: var(--black);
+
 }
-.blog-info{
-    margin: 40px 0 0 40px ;
-}
-.blog-info h4{
+
+.blog-info h4 {
     font-weight: 300;
     line-height: 30px;
     font-size: 1.12rem;
-
 }
-.blog-info h1{
+
+.blog-info h1 {
     font-size: 2.5rem;
     font-weight: 500;
 }
-.next-btn{
-    padding: 15px 25px;
-    border-radius: 35px;
-    font-weight: 600;
-    font-size: 18px;
-    text-decoration: none;
-    border: 1px solid var(--black);
-    color:var(--black);
-    font-weight: 200;
-    justify-content: space-between;
+
+@media(max-width: 1024px) {
+    .blog-card{
+        flex-wrap: wrap;
+    }
 }
-.next-btn:hover{
-    background-color:black;
-    color: white;
-    border: 1px solid black;
-    cursor: pointer;
-    transition-duration: 1s;
-    
-}
-.next-button{
-    margin-left: 72rem;
-    display: inline-block;
-    height: 15rem;
+/* @media (min-width: 768px) and (max-width: 1024px) {
+    .book-blogs{
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .blog-card{
+        width: 49%;
+    }
+   
+} */
+@media (max-width: 768px) {
+
+    .blog-card img,
+    .blog-info {
+        max-width: 90%;
+    }
+    .blog-info h1{
+        font-size: 2rem;
+    }
 }

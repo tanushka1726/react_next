@@ -3,7 +3,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // basic styles
 import React, { useRef } from "react";
-// Optional modules (if needed)
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -22,64 +21,63 @@ const page = () => {
   const goPrev = () => swiperRef.current?.slidePrev();
   const goTo = (index: number) => swiperRef.current?.slideToLoop(index);
 
-  type Slide = {
-    title: string;
-    description: string;
-    image: string;
-    buttonText: string;
-  };
-
-  const slides: Slide[] = [
+type reviewType = {
+  img: string;
+  heading: string;
+  para: string;
+  bgcolor: string;
+};
+const reviewCards : reviewType[] = [
     {
-      title: "Jenny Wilson",
-      description: "Readster has transformed my reading habits. With its offline reading feature, I can enjoy my favorite books even without an internet connection.",
-      image: "/testimonial1.jpg",
-      buttonText: "Play video",
+        heading: "Ronald Richards",
+        para: "I recently purchased a book from your store, and it was an absolute delight. The author's storytelling skills were exceptional, and the characters felt so real.",
+        bgcolor: "linear-gradient(to bottom, var(--purple), var(--purple) 20%, rgba(255, 255, 255, 0) 60%, rgba(238, 236, 243, 0))",
+        img: "review_image1.jpg"
     },
     {
-      title: "Lislie Alexander",
-      description: "I recently purchased a book from your store, and it was an absolute delight. The author's storytelling skills were exceptional, and the characters felt so real.",
-      image: "/testimonial2.jpg",
-      buttonText: "Play video",
+        heading: "Cody Fisher",
+        para: "Thank you for curating such amazing books in your store. The storyline was captivating, the characters were well-developed, and the writing style was engaging.",
+        bgcolor: "linear-gradient(to bottom, var(--pink), var(--pink) 20%, rgba(202, 157, 162, 0) 60%, rgba(202, 157, 162, 0))",
+        img: "review_image2.jpg"
     },
     {
-      title: "Ronald Richars",
-      description: "I'm so glad I stumbled upon your book store and found this hidden gem. I'm grateful to have discovered such a fantastic book at your store, and I can't wait to explore more titles in the future.",
-      image: "/testimonial3.jpg",
-      buttonText: "Play video",
+        heading: "Jenny Wilson",
+        para: "I'm so glad I stumbled upon your book store and found this hidden gem. I'm grateful to have discovered such a fantastic book at your store, and I can't wait to explore more titles in the future.",
+        bgcolor: "linear-gradient(to bottom, var(--yellow), var(--yellow) 20%, rgba(228, 185, 118, 0) 60%, rgba(228, 185, 118, 0))",
+        img: "review_image3.jpg"
     },
     {
-      title: "Robert Fox",
-      description: "Readster has become my reading companion wherever I go. The cross-platform compatibility and cloud storage make it effortless to switch between devices.",
-      image: "/testimonial4.jpg",
-      buttonText: "Play video",
+        heading: "Robert Fox",
+        para: "Readster has transformed my reading habits. With its offline reading feature, I can enjoy my favorite books even without an internet connection.",
+        bgcolor: "linear-gradient(#aebbba, #aebbba 20%, rgba(174, 187, 186, 0) 60%, rgba(174, 187, 186, 0))",
+        img: "review_image4.jpg"
     },
     {
-      title: "Cody Fisher",
-      description: "Thank you for curating such amazing books in your store. The storyline was captivating, the characters were well-developed, and the writing style was engaging.",
-      image: "/testimonial5.jpg",
-      buttonText: "Play video",
+        heading: "Leslie Alexander",
+        para: "Readster has become my reading companion wherever I go. The cross-platform compatibility and cloud storage make it effortless to switch between devices.",
+        bgcolor: "linear-gradient(#857871, #857871 20%, rgba(133, 120, 113, 0) 60%, rgba(133, 120, 113, 0))",
+        img: "review_image5.jpg"
     },
     {
-      title: "Jorem Bell",
-      description:"Readster has completely transformed my reading experience. The vast collection of books, and seamless synchronization across devices have made it my go-to platform.",
-      image: "/testimonial6.jpg",
-      buttonText: "Play video",
+        heading: "Jerome Bell",
+        para: "Readster has completely transformed my reading experience. The vast collection of books, and seamless synchronization across devices have made it my go-to platform.",
+        bgcolor: "linear-gradient(#a3bbd0, #a3bbd0 20%, rgba(163, 187, 208, 0) 60%, rgba(163, 187, 208, 0))",
+        img: "review_image6.jpg"
     },
-  ];
+]
 
   return (
     <>
     <Banner title="About us" description="At Readster, we believe in the power of literature to transport us to
           new worlds, ignite our imagination, and inspire personal
           growth."/>
-      <div className="about-our-story">
+      <div className="about-our-story r_container">
         <div className="about-first-left-section">
-          <img src="our_story.jpg" alt="our-story" width={510} height={400} />
+          <img src="our_story.jpg" alt="our-story" />
           <div className="our_story">Our story</div>
         </div>
         <div className="about-first-right-section">
-          <img src="about_book.jpg" alt="books" width={720} height={400} />
+          <img src="about_book.jpg" alt="books"/>
           <p>
             Welcome to Readster, your ultimate destination for all things books!
             At Readster, we believe in the power of literature to inspire,
@@ -93,7 +91,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="work-with-us">
+      <div className="work-with-us r_container">
         <img src="work-with-us.jpg" alt="work" width={790} height={490} />
         <div className="work-para">
           <h1>Work With Us</h1>
@@ -108,7 +106,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="publish">
+      <div className="publish r_container">
         <div className="publish-para">
           <h1>Publishing Divisions</h1>
           <p>
@@ -120,7 +118,7 @@ const page = () => {
         </div>
         <img src="publish.jpg" alt="publish" width={790} height={450} />
       </div>
-      <div className="publish-with-us">
+      <div className="publish-with-us r_container">
         <div className="publish-left-side">
           <h1>Publish With Us</h1>
           <p>
@@ -144,29 +142,29 @@ const page = () => {
           </ul>
         </div>
       </div>
-      <div className="team-members">
+      <div className="team-members r_container">
         <div className="members">Members</div>
         <h1>Our Team</h1>
         <div className="team-member-info">
           <div className="team-members-card">
-            <img src="ester.jpg" alt="ester" width={300} height={400} />
+            <img src="ester.jpg" alt="ester"   />
             <div className="member-name">Ester Howard</div>
           </div>
           <div className="team-members-card">
-            <img src="jenny.jpg" alt="jenny" width={300} height={400} />
+            <img src="jenny.jpg" alt="jenny"  />
             <div className="member-name">Jenny Wilson</div>
           </div>
           <div className="team-members-card">
-            <img src="robert.jpg" alt="robert" width={300} height={400} />
+            <img src="robert.jpg" alt="robert"  />
             <div className="member-name">Robert Fox</div>
           </div>
           <div className="team-members-card">
-            <img src="cody.jpg" alt="cody" width={300} height={400} />
+            <img src="cody.jpg" alt="cody"  />
             <div className="member-name">Cody Fisher</div>
           </div>
         </div>
       </div>
-      <div className="review">
+      <div className="review r_container">
         <div className="review-card">
           <h1>128k+</h1>
           <p>Book Collection</p>
@@ -291,7 +289,7 @@ const page = () => {
           <path
             d="M64 61V36C64 20.536 51.464 8 36 8V8C20.536 8 8 20.536 8 36V61"
             stroke="#CA9DA2"
-            stroke-width="15"
+            strokeWidth="15"
           />
         </svg>
         <svg
@@ -309,19 +307,22 @@ const page = () => {
         </svg>
         
       </div>
-      <div className="container py-4">
+      <div className="py-4 r_container">
         {/* Custom Navigation */}
         <div className="testimonials">
         <div className="testimonial">Testimonial</div>
-        <h1>What Readers Saying</h1>
       </div>
         <div className="d-flex justify-content-between mb-3">
-          <button className="btn btn-outline-dark" onClick={goPrev}>
-            ← Prev
+        <h1>What Readers Saying</h1>
+        <div className="">
+          <button className="btn " onClick={goPrev}>
+            ← 
           </button>
-          <button className="btn btn-outline-dark" onClick={goNext}>
-            Next →
+          <button className="btn" onClick={goNext}>
+            →
           </button>
+        </div>
+          
         </div>
 
         {/* Swiper */}
@@ -337,36 +338,32 @@ const page = () => {
               delay: 3000,
               pauseOnMouseEnter: true, // ✅ This pauses autoplay on hover
             }}
-            className="h-100"
+             breakpoints={{
+    0: {
+      slidesPerView: 1.5,
+    },
+    425: {
+      slidesPerView: 2,
+    },
+    728: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 3.5,
+    },
+  }}
             navigation={false} // ⛔ Hides default arrows
             pagination={false} // ⛔ Hides default dots
           >
-            {slides.map((slide, index) => (
+            {reviewCards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "350px",
-                  }}
-                >
-                  <Image
-                    src={slide.image}
-                    alt={slide.title}
-                    layout="fill"
-                    objectFit="cover"
-                    style={{ filter: "brightness(70%)", zIndex: "8" }}
-                  />
-                  <div
-                    className="position-absolute top-50 start-50 translate-middle text-white text-center px-3"
-                    style={{ zIndex: 9, position: "absolute" }}
-                  >
-                    <h2 className="display-5 fw-bold">{slide.title}</h2>
-                    <p className="lead">{slide.description}</p>
-                    <button className="btn btn-light mt-2">
-                      {slide.buttonText}
-                    </button>
-                  </div>
+                <div key={index} className="review_card">
+                    <div className="review_overlay" style={{backgroundImage: card.bgcolor}}></div>
+                    <div className="review_info">
+                        <h3>{card.heading}</h3>
+                        <p>{card.para}</p>
+                    </div>
+                    <img className="review_image"  alt={card.heading + "Image"} src={`/review_img/${card.img}`} />
                 </div>
               </SwiperSlide>
             ))}
@@ -374,8 +371,8 @@ const page = () => {
         </div>
 
         {/* Custom Pagination Dots */}
-        <div className="pagination_swiper">
-          {slides.map((_, index) => (
+        {/* <div className="pagination_swiper">
+          {reviewCards.map((_, index) => (
             <div
               key={index}
               onClick={() => goTo(index)}
@@ -389,7 +386,7 @@ const page = () => {
               }}
             />
           ))}
-        </div>
+        </div> */}
       </div>
       <FooterBase/>
     </>

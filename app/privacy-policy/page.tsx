@@ -1,110 +1,143 @@
 import React from "react";
 import Banner from "@/components/Banner/Banner"
+
 const page = ()=>{
     return(
         <>
-        <Banner title="" description=""/>
+        <Banner title="Privay Policy" description="At our online store, we value your satisfaction and want to ensure that you have a smooth and hassle-free shopping experience."/>
         
-        <div id="cf-wrapper">
-    <div id="cf-error-details" className="p-0">
-        <header className="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
-            <h1 className="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
-              <span className="inline-block">Bad gateway</span>
-              <span className="code-label">Error code 502</span>
-            </h1>
-            <div>
-               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=readster-template.webflow.io" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
-            </div>
-            <div className="mt-3">2025-04-15 16:30:02 UTC</div>
-        </header>
-        <div className="my-8 bg-gradient-gray">
-            <div className="w-240 lg:w-full mx-auto">
-                <div className="clearfix md:px-8">
-                  
-<div id="cf-browser-status" className=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
-  <div className="relative mb-10 md:m-0">
+         <div className="page-wrapper">
     
-    <span className="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
-    <span className="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
-    
-  </div>
-  <span className="md:block w-full truncate">You</span>
-  <h3 className="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
-    
-    Browser
-    
-  </h3>
-  <span className="leading-1.3 text-2xl text-green-success">Working</span>
-</div>
-
-<div id="cf-cloudflare-status" className=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
-  <div className="relative mb-10 md:m-0">
-    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=readster-template.webflow.io" target="_blank" rel="noopener noreferrer">
-    <span className="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
-    <span className="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
-    </a>
-  </div>
-  <span className="md:block w-full truncate">New Delhi</span>
-  <h3 className="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
-    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=readster-template.webflow.io" target="_blank" rel="noopener noreferrer">
-    Cloudflare
-    </a>
-  </h3>
-  <span className="leading-1.3 text-2xl text-green-success">Working</span>
-</div>
-
-<div id="cf-host-status" className="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
-  <div className="relative mb-10 md:m-0">
-    
-    <span className="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
-    <span className="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
-    
-  </div>
-  <span className="md:block w-full truncate">readster-template.webflow.io</span>
-  <h3 className="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
-    
-    Host
-    
-  </h3>
-  <span className="leading-1.3 text-2xl text-red-error">Error</span>
-</div>
-
-                </div>
-            </div>
+      <div className="policy-wrap">
+        <div className="container w-container ">
+          <h4>Introduction</h4>
+          <p>
+            Cras auctor nisl non ornare pellentesque orci leo congue et vel
+            pellentesque at amet quisque arcu purus tincidunt in lectus
+            adipiscing phasellus porta sapien adipiscing at enim non mattis
+            condimentum et sit aliquam fames convallis semper pharetra at neque
+            ac dignissim.
+            <br />‍
+          </p>
+          <h4>Cancellation &amp; Refund</h4>
+          <div className="check-list">
+            <p>
+              A. Cras auctor nisl non ornare pellentesque orci leo congue et vel
+              pellentesque at amet quisque arcu purus tincidunt in lectus
+              adipiscing phasellus
+            </p>
+            <ul role="list" className="rp-check-list w-list-unstyled">
+              <li>
+                Erat in vitae pretium adipiscing convallis auctor lacus
+                pharetra.
+              </li>
+              <li>Orci arcu nisi nisl quisque fermentum vulputate vitae.</li>
+              <li>
+                Cursus aliquet nunc faucibus mollis sed fusce fames consequat.
+              </li>
+            </ul>
+          </div>
+          <div className="check-list">
+            <p>B. Pellentesque lacus tellus et lobortis dignissim molestie.</p>
+            <ul role="list" className="rp-check-list w-list-unstyled">
+              <li>Sit urna elit nunc ut enim lobortis odio.</li>
+              <li>Vel ac eget purus tincidunt quis mauris.</li>
+              <li>Luctus rhoncus posuere ultrices ipsum tristique.</li>
+              <li>
+                Duis tincidunt pellentesque tellus et tempus mauris neque.
+              </li>
+              <li>Tellus sit arcu risus dis egestas ut ultrices gravida.</li>
+              <li>Auctor laoreet imperdiet proin et.er id.</li>
+            </ul>
+          </div>
+          <div className="check-list">
+            <p>C. Orci morbi ut potenti enim morbi sagittis viverra lacus.</p>
+            <ul role="list" className="rp-check-list w-list-unstyled">
+              <li>
+                Vitae risus vel et purus nunc adipiscing amet pellentesque sed
+                id imperdiet elit a.
+              </li>
+              <li>
+                Imperdiet aliquet sit mattis elit sit risus ultricies odio quam
+                at arcu.
+              </li>
+              <li>Pellentesque nibh fringilla cursus morbi egestas dictum.</li>
+              <li>
+                Feugiat elit nullam turpis bibendum nec et tincidunt tempor
+                praesent malesuada sodales amet et nunc in nibh elit.
+              </li>
+            </ul>
+          </div>
+          <h4>Refund Owing to Cancellation</h4>
+          <p>
+            At senectus velit feugiat tortor est volutpat hendrerit orci. Tortor
+            adipiscing proin orci euismod accumsan cursus felis morbi. Non
+            dignissim sapien nec porttitor tellus. Eget feugiat sed sapien et.
+            Faucibus sollicitudin tortor vestibulum tellus neque in turpis.
+            Massa ipsum felis fermentum tortor mattis fermentum massa. Diam
+            magna pharetra ipsum porta commodo tristique quam. Odio cras sed dis
+            molestie vehicula amet. Non libero tortor tellus viverra viverra
+            nulla amet aliquet. Dignissim aliquet magna vivamus et ac
+            pellentesque. Nulla accumsan turpis vel convallis. Tellus pulvinar
+            diam ultricies sed id sed aenean. Est enim commodo pharetra diam.
+            Convallis leo neque faucibus et convallis vitae rhoncus.
+          </p>
+          <p>
+            Odio porttitor eget ligula massa in risus fermentum fermentum enim.
+            Feugiat euismod turpis sit massa sem pellentesque. Dapibus viverra
+            in et vestibulum vulputate adipiscing lobortis rhoncus gravida. Leo
+            quam cursus sit at amet augue ut et ut. Semper leo viverra in neque
+            amet consectetur. Sagittis enim arcu lacus a feugiat in suspendisse.
+            Eget non dui ultrices viverra sociis tortor. Lorem ullamcorper
+            dignissim sed molestie duis cursus. Amet egestas enim ornare elit
+            nascetur lectus porttitor.
+            <br />‍
+          </p>
+          <h4>Returns &amp; Refunds</h4>
+          <p>
+            Ut sem orci vivamus velit elit rutrum eget. Nulla ut malesuada fames
+            amet volutpat eros pellentesque blandit risus. Commodo nullam vel
+            vel consectetur. Pellentesque convallis viverra interdum elit
+            blandit ut tristique pellentesque. Egestas nibh sed laoreet
+            consectetur donec. Ultricies duis proin aliquam eget vivamus cursus.
+            Rhoncus felis senectus vestibulum consectetur ac. Sed neque neque
+            odio morbi. Pulvinar sed ut sed egestas malesuada consequat nec.
+          </p>
+          <p>
+            A vitae malesuada sem feugiat. Nisl dictum vulputate massa tristique
+            tempus. Ultrices porttitor vitae elementum ullamcorper viverra.
+            Porta tincidunt nunc dui felis sit ut tellus risus. Pellentesque
+            morbi adipiscing suspendisse adipiscing vitae arcu blandit egestas
+            volutpat. Risus eget pellentesque amet sed dictum odio.
+            <br />‍
+          </p>
+          <h4>Item Damaged During Shipment</h4>
+          <p>
+            Id lectus dictumst sodales donec sed ullamcorper tellus. Morbi enim
+            in faucibus ultrices cras. Senectus ac fames at nunc neque nisi
+            hendrerit cursus. Purus ultrices ipsum aenean leo pretium accumsan.
+            Est odio mattis risus diam. Amet sit sit tortor neque magna mi
+            tristique non vulputate. Blandit tincidunt pharetra at sollicitudin
+            proin nisl molestie dictumst fermentum. Enim dolor integer justo
+            dignissim consectetur diam elit sed neque. Enim vitae erat pretium
+            praesent cras aliquet nisl senectus adipiscing. Enim sed fames quam
+            ullamcorper eleifend ut phasellus. Fermentum hendrerit aenean
+            habitant justo. Egestas malesuada tortor arcu mauris faucibus
+            facilisi.
+          </p>
+          <p>
+            Sapien eget morbi amet sagittis integer tortor ornare quam.
+            Ullamcorper feugiat eu aliquet sed amet turpis arcu vel integer.
+            Nulla turpis pharetra sit pellentesque euismod sed diam. Pharetra
+            turpis nibh in elit ut. Cras nulla tortor fames risus vitae. Eget
+            ipsum sed ipsum egestas dui nulla lacus ac. Sit amet sociis
+            adipiscing sed nisl. Nisl a tortor arcu dui sit vivamus viverra.
+            Aliquet aliquet etiam rutrum elementum sapien. Lacus aliquam
+            fermentum ut bibendum imperdiet quam quis euismod.
+          </p>
         </div>
-
-        <div className="w-240 lg:w-full mx-auto mb-8 lg:px-8">
-            <div className="clearfix">
-                <div className="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
-                    <h2 className="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
-                    <p>The web server reported a bad gateway error.</p>
-                </div>
-                <div className="w-1/2 md:w-full float-left leading-relaxed">
-                    <h2 className="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
-                    <p className="mb-6">Please try again in a few minutes.</p>
-                </div>
-            </div>
-        </div>
-
-        <div className="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
-  <p className="text-13">
-    <span className="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong className="font-semibold">930cd34019f15a00</strong></span>
-    <span className="cf-footer-separator sm:hidden">&bull;</span>
-    <span id="cf-footer-item-ip" className="cf-footer-item hidden sm:block sm:mb-1">
-      Your IP:
-      <button type="button" id="cf-footer-ip-reveal" className="cf-footer-ip-reveal-btn">Click to reveal</button>
-      <span className="hidden" id="cf-footer-ip">2405:5540:3:910:7862:e9b1:6e9b:500e</span>
-      <span className="cf-footer-separator sm:hidden">&bull;</span>
-    </span>
-    <span className="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=readster-template.webflow.io" id="brand_link" target="_blank">Cloudflare</a></span>
-    
-  </p>
-  
-
-
+      </div>
     </div>
-</div>
-</div>
 </>
         
     

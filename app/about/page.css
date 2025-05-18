@@ -1,135 +1,185 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.review_card {
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
 }
 
-.about-us-head{
-    display:flex;
-    background-color:#e5e6e1;
+.review_overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.review_info {
+    padding-left: 44px;
+    padding-right: 44px;
+    position: absolute;
+    top: 12%;
+    color: var(--white);
+}
+
+.review_image {
+    width: 100%;
+}
+
+
+
+.about-us-head {
+    display: flex;
+    background-color: #e5e6e1;
     height: 15rem;
     max-width: 100%;
 }
-.about-us-head h1{
+
+.about-us-head h1 {
     margin: 55px 0 40px 40px;
     font-size: 5rem;
     font-weight: 100;
 }
-.about-us-head h5{
+
+.about-us-head h5 {
     margin: 6rem 0 0 25rem;
-    font-size: 1.15rem;  
+    font-size: 1.15rem;
     font-weight: 100;
-    line-height:20px;
+    line-height: 20px;
 }
-.about-our-story{
+
+.about-our-story {
     display: flex;
     margin-top: 8rem;
 }
-.about-first-left-section{
+
+.about-first-left-section {
     margin: 3px 50px 0 40px;
     height: 45rem;
 }
-.our_story{
+
+.our_story {
     border: 1px solid black;
     border-radius: 50px;
     margin-top: 30px;
     padding: 10px;
     display: inline-block;
 }
-.about-first-right-section p{
+
+.about-first-right-section p {
     margin: 30px 20px 0 0;
     line-height: 30px;
     font-size: 1.15rem;
 }
-.work-with-us{
+
+.work-with-us {
     display: flex;
-    height:40rem;   
+    height: 40rem;
 }
-.work-with-us img{
+
+.work-with-us img {
     margin: 10px 0 0 20px;
 }
-.work-para{
-    margin:13rem 20px 0 50px;
+
+.work-para {
+    margin: 13rem 20px 0 50px;
     line-height: 25px;
 }
-.work-para h1{
+
+.work-para h1 {
     margin-bottom: 30px;
-    font-size:3.5rem ;
+    font-size: 3.5rem;
     font-weight: 200;
 }
-.work-para p{
+
+.work-para p {
     margin-left: 12px;
     font-size: 1.15rem;
 }
-.publish{
-    display:flex;
+
+.publish {
+    display: flex;
 }
-.publish-para{
-    margin:6rem 20px 0 20px;
+
+.publish-para {
+    margin: 6rem 20px 0 20px;
     height: 30rem;
 }
-.publish-para p{
+
+.publish-para p {
     line-height: 25px;
-    margin: 15px 70px 0 0 ;
+    margin: 15px 70px 0 0;
     font-size: 1.15rem;
 
 }
-.publish-para h1{
+
+.publish-para h1 {
     font-weight: 200;
     font-size: 3rem;
 }
+
 .publish img {
     margin-right: 20px;
 }
-.publish-with-us{
-    display:flex;
-    height:28rem;
+
+.publish-with-us {
+    display: flex;
+    justify-content: center;
     background-color: #e5e6e1;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-.publish-left-side{
-    margin:7rem 80px 20px 30px;
+
+.publish-left-side {
     line-height: 30px;
     /* background-color: red; */
-    width: 35%;
+    width: 50%;
 }
-.publish-left-side h1{
+
+.publish-left-side h1 {
     font-size: 3rem;
-    font-weight:200;
-    margin-bottom:30px;
+    font-weight: 200;
+    margin-bottom: 30px;
 }
-.send-email{
+
+.send-email {
     border-radius: 50px;
-    display:inline-block;
+    display: inline-block;
     background-color: var(--white);
-    padding:10px 20px;
-    margin-top:20px;
+    padding: 10px 20px;
+    margin-top: 20px;
 }
-.send-email span{
+
+.send-email span {
     font-weight: 700;
 }
-.publish-right-side{
-    margin:7rem 20px 0 25rem;
+
+.publish-right-side {
     line-height: 50px;
     font-size: 1.20rem;
-    width: 30%;
+    width: 35%;
 }
-.members,.testimonial{
+
+.members,
+.testimonial {
     padding: 10px 20px;
     display: inline-block;
     border-radius: 50px;
     border: 1px solid black;
 }
-.team-members{
-    height: 40rem;
-    margin: 7rem 0 0 40px ;
+
+.team-members {
+ padding-top: 3rem;
+ padding-bottom: 4rem;
 }
-.team-members h1,.testimonials h1{
+
+.team-members h1,
+.testimonials h1 {
     font-weight: 200;
     font-size: 2.50rem;
-    margin-top:15px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
-.member-name{
+
+.member-name {
     border-radius: 45px;
     padding: 8px 25px;
     display: inline-block;
@@ -138,21 +188,32 @@
     left: 20px;
     background-color: white;
 }
-.team-member-info{
+
+.team-member-info {
     display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-.team-members-card{
-    margin-right: 15px;
+
+.team-members-card {
     position: relative;
+    width: 23.5%;
 }
-.review{
-    background-color:#e0cbcd;
+.team-members-card img{
+  object-fit: cover;
+}
+
+.review {
+    background-color: #e0cbcd;
     /* background-color: #bbb2cf; */
     height: 15rem;
-    display:flex;
+    display: flex;
     position: relative;
 }
-.review-card{
+
+.review-card {
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -160,41 +221,73 @@
     width: 100%;
     margin-top: 4rem;
 }
-.review-card h1{
+
+.review-card h1 {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 4rem;
 }
-.review-card span{
+
+.review-card span {
     margin-right: 0;
 }
-.review-card p{
+
+.review-card p {
     margin-left: 10px;
 }
-.state-img{
+
+.state-img {
     position: absolute;
     bottom: 0;
     right: 0;
 }
-.state-graphics{
-    position:absolute;
+
+.state-graphics {
+    position: absolute;
     bottom: 0;
     right: 10%;
 }
-.state-img-wrap{
+
+.state-img-wrap {
     position: absolute;
     top: -25px;
     right: 3%;
 }
-.testimonials{
+
+.testimonials {
     margin-top: 6rem;
     padding: 30px;
 }
-.pagination_swiper{
+
+.pagination_swiper {
     display: flex;
     margin-top: 40px;
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
     gap: 7px;
+}
+
+@media (max-width: 1024px) {
+
+    .state-img-wrap,
+    .state-img,
+    .state-graphics {
+        display: none;
+    }
+    .team-members-card {
+    width: 47%;
+}
+
+}
+@media (max-width: 550px) {
+
+   
+    .publish-with-us {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .publish-left-side, .publish-right-side{
+        width: 100%;
+    }
 }

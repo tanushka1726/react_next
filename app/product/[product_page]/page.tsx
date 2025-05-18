@@ -32,7 +32,7 @@ const page = ()=>{
     return(
         <>
        <div className="book r_container">
-        <img src="/home_images/think-grow.jpg" alt="" width={580} height={750}/>
+        <img src="/home_images/alchemist.jpg" alt="" />
         <div className="book-info">
             <h1>Think And grow </h1>
             <p>-Nepolean Hill</p>
@@ -53,9 +53,9 @@ const page = ()=>{
         <h2>Description</h2>
         <div className="desc-info">
             <p>He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie. However there is no evidence that the two ever met.</p>
-            <br /> <br />
+       
             <p>The most famous of all teachers of success spent "a fortune and the better part of a lifetime of effort" to produce the "Law of Success" philosophy that forms the basis of his books and that is so powerfully summarized in this one.</p>
-            <br /> <br />
+          
             <p>In the original Think and Grow Rich, published in 1937, Hill draws on stories of Andrew Carnegie, Thomas Edison, Henry Ford, and other millionaires of his generation to illustrate his principles. In the updated version, Arthur R. Pell, Ph.D., a nationally known author, lecturer, and consultant in human resources management and an expert in applying Hill's thought, deftly interweaves anecdotes of how contemporary millionaires and billionaires, such as Bill Gates, Mary Kay Ash, Dave Thomas, and Sir John Templeton, achieved their wealth.</p>
 
         </div>

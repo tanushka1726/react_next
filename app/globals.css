@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Aspekta";
   src: url("/fonts/Aspekta-300.ttf") format("truetype");
@@ -142,4 +148,27 @@ li{
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.next-btn{
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 18px;
+    color:var(--black);
+    border: 1px solid var(--black);
+    text-decoration: none;
+    font-weight: 200;
+}
+.next-btn:hover{
+    background-color:var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    transition-duration:1s ;
+    
+}
+.next-button{
+        display: flex
+;
+    justify-content: end;
+    margin :2.5rem 0.5rem; 
 }

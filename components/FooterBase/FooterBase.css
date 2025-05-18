@@ -47,3 +47,8 @@
     right: 0;
 }
 
+@media (max-width: 1024px) {
+    .graphic, .design, .svg_{
+        display: none;
+    }
+}

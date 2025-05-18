@@ -47,11 +47,11 @@
     transition-duration:1s ;
     
 }
-.next-button{
+/* .next-button{
     margin-left: 70rem;
     display: inline-block;
     height: 15rem;
-}
+} */
 .location{
     margin-top: 6rem;
     background-color: #f8efe5;
