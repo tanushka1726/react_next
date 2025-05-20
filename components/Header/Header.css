@@ -156,8 +156,11 @@ span:hover {
   .desktop_link, .navList a:not(:first-child){
     display: none;
   }
-  .right-header-elements {
+  .right-header-elements, .mobileMenu {
    
     gap: 10px;
+}
+.mobileMenu ul{
+  padding-left: 1rem !important;
 }
 }

@@ -1,104 +1,182 @@
+h5 {
+    margin: 0;
+}
 
-
-.customer-support{
+.customer-support {
     display: flex;
-    margin-top:4rem ;
-    height: 28rem;
-}
-.left-section-support{
-    margin-right: 19rem;
+    margin-top: 6rem;
+    justify-content: space-between;
 }
 
-.get-touch{
+.message-info {
+    margin-top: 1rem;
+}
+
+.message-info textarea {
+    resize: none;
+}
+
+/* .left-section-support {} */
+
+.right-section-suuport {
+    width: 40%;
+}
+
+.flex-down {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 0.5rem);
+}
+
+.flex-down-full {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input,
+textarea {
+    border: 0 solid #000;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 0;
+    padding: 10px 0;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007BFF;
+}
+
+.get-touch {
     display: inline-block;
     border: 1px solid var(--black);
-    padding:10px 25px;
-    margin: 20px;
+    padding: 10px 25px;
     border-radius: 50px;
+    margin-bottom: 3rem;
 }
-.left-section-support h1{
+
+.left-section-support h1 {
     font-weight: 400;
+    margin-bottom: 3rem;
 }
-.contact-data{
+
+.contact-data {
     display: flex;
-    margin: 30px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
 }
-.contact-data h5{
+
+.contact-data h5 {
     font-weight: 400;
     text-decoration: dashed;
-    margin-left: 10px;
 }
-.info{
-    display: flex;
-}
-.next-btn{
-    padding: 12px 30px;
-    border-radius: 35px;
-    font-weight: 200;
-    font-size: 18px;
-    background-color: var(--white);
-    text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--black);
-}
-.next-btn:hover{
-    background-color:var(--black);
-    color: var(--white);
-    transition-duration:1s ;
-    
-}
-/* .next-button{
-    margin-left: 70rem;
-    display: inline-block;
-    height: 15rem;
-} */
-.location{
-    margin-top: 6rem;
-    background-color: #f8efe5;
-    height: 25rem;
-    padding-top:4rem ;
 
-}
-.location h1{
-    font-weight: 400;
-}
-.location-card{
-    margin-top: 30px;
-    margin-right: 50px;
-    /* justify-content:space-evenly; */
-}
-.location-card h3{
-    font-weight: 400;
-}
-.loaction-info{
+.info {
     display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
 }
-.questions{
+
+.location_container {
+    background-color: #f8efe5;
+}
+
+.location {
     margin-top: 6rem;
-    height: 55rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
-.FAQ{
-    display: inline-block;
-    border: 1px solid var(--black);
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-bottom: 25px;   
+
+.location h1 {
+    font-weight: 400;
 }
-.questions h1{
+
+.location-card {
+    margin-top: 30px;
+}
+
+.location-card h3 {
+    font-weight: 400;
+}
+
+.loaction-info {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.question {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.FAQ {
+    border: none;
+    border-bottom: 1px solid var(--black);
+    border-radius: 0 !important;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+}
+
+.questions h1 {
     font-weight: 300;
 }
-.question{
-    display:flex;
+
+.question {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
-.question img{
-    margin-right: 30px;
+
+.question_acc img {
+    width: 50%;
+    object-fit: cover;
 }
-.question h5{
-    margin: 30px 0 30px 0;
-}
-.question h5:hover{
+
+.question_acc h5:hover {
     cursor: pointer;
 }
-.basic-questions{
-    margin: 30px 0 20px 40px;
+
+@media (max-width: 1024px) {
+    .question {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .location-card {
+        max-width: 30%;
+    }
+
+    .question img,
+    .basic-questions {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .loaction-info {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .location-card {
+        max-width: 100%;
+    }
+
+    .customer-support {
+        flex-wrap: wrap;
+    }
+
+    .right-section-suuport {
+        width: 100%;
+    }
+    .question img,
+    .basic-questions {
+        width: 100%;
+    }
 }
