@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from "react";
-import { GoPlus, GoDash } from "react-icons/go";
 
 import Banner from "@/components/Banner/Banner";
 import "./page.css"
@@ -40,7 +39,7 @@ const faqData: FAQItem[] = [
 ];
 
 
-const page = () => {
+const Page = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
@@ -180,4 +179,4 @@ const page = () => {
   );
 
 };
-export default page;
+export default Page;
