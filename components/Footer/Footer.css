@@ -60,9 +60,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .copyright p{
     margin: 0;
+    
 }
 .copyright span{
     text-decoration: underline;
@@ -81,5 +83,16 @@
 @media (max-width: 767px) {
     .left-footer-section{
         max-width: 100%;
+    }
+    .copyright{
+        justify-content: center;
+        gap: 8px;
+    }
+    .copyright p{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-section{
+        padding-bottom: 30px;
     }
 }

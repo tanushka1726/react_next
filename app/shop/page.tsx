@@ -78,7 +78,7 @@ const page = () => {
    <Banner title="Our book Collection" description="Explore different collection and discover new perspectives, knowledge, and inspiration."/>
     <div className="book-store r_container">
     {book.map((books,index)=>(
-            <div  className="book-card">
+            <div  className="book-card" key={index}>
               <img src={`${books.image}`} alt="" width={300} height={400}/>
               <h5>{books.title}</h5>
               <p>{books.price}</p>

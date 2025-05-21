@@ -103,6 +103,7 @@ span:hover {
   visibility: hidden; /* Ensure it's hidden when not open */
   transition: transform 0.3s ease-out, visibility 0s linear 0.5s; /* Delay visibility change */
   padding: 0;
+  z-index: 99;
 }
 
 .overlay.open {
@@ -155,8 +156,11 @@ span:hover {
   .desktop_link, .navList a:not(:first-child){
     display: none;
   }
-  .right-header-elements {
+  .right-header-elements, .mobileMenu {
    
     gap: 10px;
+}
+.mobileMenu ul{
+  padding-left: 1rem !important;
 }
 }

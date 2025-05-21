@@ -7,11 +7,33 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const page = () => {
+type NavItem = {
+  label: string;
+  href?: string;
+  subItems?: NavItem[];
+};
+
+const navItems: NavItem[] = [
+  {
+    label: 'Book',
+    subItems: [
+      { label: 'Biography', href: '/category/biography' },
+      { label: 'Novel', href: '/category/novel' },
+      { label: 'Self Help', href: '/category/self-help' },
+    ],
+  },
+  { label: 'Shop', href: '/shop' },
+  { label: 'About', href: '/about' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact us', href: '/contact' },
+];
+
+const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
+    const handleLinkClick = () => setMenuOpen(false);
   return (
     <header className="headerContainer">
       <ul className="navList r_container">
@@ -69,39 +91,38 @@ const page = () => {
         </div>
        
       </ul>
-      <ul className={`overlay ${menuOpen ? 'open' : ''}`}>
-        <div className="mobileMenu">
-          <div className="search-bar mob_search">
-            <IoSearchOutline size={25} />
-            <input type="text" placeholder="Search book.." />
-          </div>
-          <li className="book_mobile">Book</li>
-          <ul>
-            <li>
-              <Link href="/category/biography">Biography</Link>
-            </li>
-            <li>
-              <Link href="/category/novel">Novel</Link>
-            </li>
-            <li>
-              <Link href="/category/self-help">Self Help</Link>
-            </li>
-          </ul>
-          <li>
-            <Link href="/shop">Shop</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact us</Link>
-          </li>
+       <ul className={`overlay ${menuOpen ? 'open' : ''}`}>
+      <div className="mobileMenu">
+        <div className="search-bar mob_search">
+          <IoSearchOutline size={25} />
+          <input type="text" placeholder="Search book.." />
         </div>
-      </ul>
+
+        {navItems.map((item) => (
+          <li key={item.label}>
+            {item.subItems ? (
+              <>
+                <div className="book_mobile">{item.label}</div>
+                <ul>
+                  {item.subItems.map((sub) => (
+                    <li key={sub.label}>
+                      <Link href={sub.href!} onClick={handleLinkClick}>
+                        {sub.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <Link href={item.href!} onClick={handleLinkClick}>
+                {item.label}
+              </Link>
+            )}
+          </li>
+        ))}
+      </div>
+    </ul>
     </header>
   );
 };
-export default page;
+export default Page;

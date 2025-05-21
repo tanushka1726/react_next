@@ -26,9 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.book-card{
-    margin-left: 20px;
+    gap: 1.5rem;
 }
 .book-card h5{
     line-height: 25px;
@@ -36,24 +34,9 @@
 
 }
 
-.next-btn{
-    padding: 15px 25px;
-    border-radius: 35px;
-    font-weight: 600;
-    font-size: 18px;
-    color:var(--black);
-    border: 1px solid var(--black);
-    text-decoration: none;
-    font-weight: 200;
-}
-.next-btn:hover{
-    background-color:var(--black);
-    color: var(--white);
-    border: 1px solid var(--black);
-    transition-duration:1s ;
-    
-}
-.next-button{
-    display: inline-block;
-    height: 15rem;
+
+@media (max-width: 768px) {
+    .book-store{
+        margin-top: 4rem;
+    }
 }

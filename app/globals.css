@@ -1,20 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Aspekta";
   src: url("/fonts/Aspekta-300.ttf") format("truetype");
   font-weight: 300;
 }
+
 @font-face {
   font-family: "Aspekta";
   src: url("/fonts/Aspekta-400.ttf") format("truetype");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Aspekta";
   src: url("/fonts/Aspekta-500.ttf") format("truetype");
   font-weight: 500;
 }
+
 /* kkk */
-body{
+body {
   font-family: "Aspekta";
   font-weight: 400;
   color: var(--body);
@@ -33,14 +42,19 @@ body{
   --pink: #ca9da2;
 }
 
-a{
+a {
   font-weight: 500;
   font-family: "Aspekta";
   text-decoration: none;
   color: var(--white);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 10px;
   /* font-weight: bold; */
   font-family: "Aspekta";
@@ -92,7 +106,12 @@ p {
   font-family: "Aspekta";
 }
 
-
+img,
+svg {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
 
 blockquote {
   border-left: 5px solid #e2e2e2;
@@ -111,20 +130,24 @@ figcaption {
   margin-top: 5px;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 40px;
 }
-li{
+
+li {
   list-style: none;
 }
-.r_container{
+
+.r_container {
   width: 100%;
   max-width: 1336px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .triangle-small {
   border-bottom: 60px solid var(--white);
   border-left: 60px solid rgba(255, 255, 255, .6);
@@ -132,10 +155,34 @@ li{
   bottom: 0;
   right: 0;
 }
+
 .triangle-small-home {
   border-bottom: 74px solid #c1c3b7;
   border-left: 74px solid var(--white);
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.next-btn {
+  padding: 15px 25px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  text-decoration: none;
+  font-weight: 200;
+  transition: all 0.3s ease-in-out;
+}
+
+.next-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.next-button {
+  display: flex;
+  justify-content: end;
+  margin: 2.5rem 0.5rem;
 }
