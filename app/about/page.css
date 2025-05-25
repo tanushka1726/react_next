@@ -48,11 +48,11 @@
 .about-our-story {
     display: flex;
     margin-top: 8rem;
+    gap: 2rem;
 }
 
 .about-first-left-section {
-    margin: 3px 50px 0 40px;
-    height: 45rem;
+    width: 40%
 }
 
 .our_story {
@@ -62,7 +62,12 @@
     padding: 10px;
     display: inline-block;
 }
-
+.about-first-right-section{
+    width: 60%;
+}
+.about-first-right-section img, .about-first-left-section img{
+    height: 440px;
+}
 .about-first-right-section p {
     margin: 30px 20px 0 0;
     line-height: 30px;
@@ -70,16 +75,15 @@
 }
 
 .work-with-us {
-    display: flex;
-    height: 40rem;
-}
-
-.work-with-us img {
-    margin: 10px 0 0 20px;
+      display: flex
+;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    align-items: center;
 }
 
 .work-para {
-    margin: 13rem 20px 0 50px;
     line-height: 25px;
 }
 
@@ -90,22 +94,20 @@
 }
 
 .work-para p {
-    margin-left: 12px;
     font-size: 1.15rem;
 }
 
 .publish {
-    display: flex;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 2rem;
 }
 
-.publish-para {
-    margin: 6rem 20px 0 20px;
-    height: 30rem;
-}
 
 .publish-para p {
     line-height: 25px;
-    margin: 15px 70px 0 0;
     font-size: 1.15rem;
 
 }
@@ -115,22 +117,18 @@
     font-size: 3rem;
 }
 
-.publish img {
-    margin-right: 20px;
-}
-
 .publish-with-us {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #e5e6e1;
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-top: 6rem;
 }
 
 .publish-left-side {
     line-height: 30px;
-    /* background-color: red; */
     width: 50%;
 }
 
@@ -206,20 +204,19 @@
 }
 
 .review {
-    background-color: #e0cbcd;
-    /* background-color: #bbb2cf; */
-    height: 15rem;
-    display: flex;
+        background-color: #e0cbcd;
+    display: flex
+;
+    justify-content: space-between;
+    padding: 4rem 20px 4rem;
     position: relative;
+    gap: 1rem;
 }
 
 .review-card {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 25px;
-    width: 100%;
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .review-card h1 {
@@ -228,13 +225,8 @@
     line-height: 4rem;
 }
 
-.review-card span {
-    margin-right: 0;
-}
 
-.review-card p {
-    margin-left: 10px;
-}
+
 
 .state-img {
     position: absolute;
@@ -267,7 +259,9 @@
     margin-left: auto;
     gap: 7px;
 }
-
+.mobile_our_story{
+    display: none;
+}
 @media (max-width: 1024px) {
 
     .state-img-wrap,
@@ -278,7 +272,12 @@
     .team-members-card {
     width: 47%;
 }
-
+.our_desktop{
+    display: none;
+}
+.mobile_our_story{
+    display: block;
+}
 }
 @media (max-width: 550px) {
 

@@ -74,10 +74,11 @@ const reviewCards : reviewType[] = [
       <div className="about-our-story r_container">
         <div className="about-first-left-section">
           <img src="our_story.jpg" alt="our-story" />
-          <div className="our_story">Our story</div>
+          <div className="our_story our_desktop">Our story</div>
         </div>
         <div className="about-first-right-section">
           <img src="about_book.jpg" alt="books"/>
+          <div className="our_story mobile_our_story">Our story</div>
           <p>
             Welcome to Readster, your ultimate destination for all things books!
             At Readster, we believe in the power of literature to inspire,
