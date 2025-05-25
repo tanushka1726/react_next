@@ -139,7 +139,7 @@ const page = () => {
             <div className="first-section-left ">
               <div className="first-section-explore">
                 <h1>
-                  Find your next great <br /> read at our online <br /> book
+                  Find your next great read at our online book
                   store
                 </h1>
                 <a href="/shop" className="btn">
@@ -153,16 +153,14 @@ const page = () => {
                 <img
                   src={"/home_images/psychology.jpg"}
                   alt="psychology.jpg"
-                  width={300}
-                  height={400}
+
                 />
               </div>
               <div className="alchemist">
                 <img
                   src={"/home_images/alchemist.jpg"}
                   alt="alchemist.jpg"
-                  width={300}
-                  height={400}
+
                 />
               </div>
             </div>
@@ -223,14 +221,14 @@ const page = () => {
                   <div className="review-img-wrap">
                     <div className="hero-review-img">
                       <img
-                       src="/home_images/review_icon_img1.jpg"
+                        src="/home_images/review_icon_img1.jpg"
                         loading="lazy"
                         alt="Review Image"
                       />
                     </div>
                     <div className="hero-review-img">
                       <img
-                       src="/home_images/review_icon_img2.jpg"
+                        src="/home_images/review_icon_img2.jpg"
                         loading="lazy"
                         alt="Review Image"
                       />
@@ -254,13 +252,13 @@ const page = () => {
         </div>
       </div>
       <div className="r_container">
-      <div className="about-wrap">
+        <div className="about-wrap">
           <div className="about-head">
             <div className="about-img-small"><img
-                src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg"
-                loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 719px) 94vw, (max-width: 767px) 676px, 24vw"
-                srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg 676w"
-                alt="About Image" /></div>
+              src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg"
+              loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 719px) 94vw, (max-width: 767px) 676px, 24vw"
+              srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c072152ab63f7801aad_about-small.jpg 676w"
+              alt="About Image" /></div>
             <div className="about-heading">
               <h2 className="about-title">Introducing Our Bookstore and Community</h2>
               <div className="body-small">Discover our bookstore and community, where stories unfold and connections
@@ -270,10 +268,10 @@ const page = () => {
           <div className="about-data-wrap">
             <div className="about-image-wrap">
               <div className="about-img-big"><img
-                  src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg"
-                  loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, 48vw"
-                  srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-800.jpg 800w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg 1202w"
-                  alt="About Image" /></div>
+                src="../cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg"
+                loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, 48vw"
+                srcSet="https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-500.jpg 500w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big-p-800.jpg 800w, https://assets-global.website-files.com/6491518bb88c5c4729ea8883/64b65c076e64fe4278c64362_about-big.jpg 1202w"
+                alt="About Image" /></div>
             </div>
             <div className="about-info">
               <p className="about-text">Welcome to Book Store: Empowering Minds Through Reading! We believe in the
@@ -281,13 +279,13 @@ const page = () => {
                 create a vibrant and inclusive community that celebrates the joy of reading and encourages personal
                 growth.</p>
               <div className="button-wrap"><a data-w-id="790d5147-5340-d65e-fa0e-a4082775f6ae" href="about-us.html"
-                  className="primary-btn w-inline-block">
-                  <div>About us</div><img
-                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
-                    loading="eager" style={{display:"block"}} alt="Arrow" className="default-btn-arrow" /><img
-                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
-                    loading="eager" style={{display:"none"}} alt="Arrow" className="hover-btn-arrow" />
-                </a></div>
+                className="primary-btn w-inline-block">
+                <div>About us</div><img
+                  src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
+                  loading="eager" style={{ display: "block" }} alt="Arrow" className="default-btn-arrow" /><img
+                  src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
+                  loading="eager" style={{ display: "none" }} alt="Arrow" className="hover-btn-arrow" />
+              </a></div>
             </div>
           </div>
         </div>
@@ -330,17 +328,12 @@ const page = () => {
         </div>
       </div>
       <div className="facility r_container">
-        <div className="facility-card" style={{ display: "flex", gap: "30px" }}>
+        <div className="facility-card">
           {card.map((cards, index) => (
             <div
               key={index}
-              style={{
-                backgroundColor: cards.color,
-                alignItems: "center",
-                gap: "15px",
-                padding: "50px 1.15rem",
-                display: "flex",
-              }}
+              className="facilities"
+              style={{ backgroundColor: cards.color, }}
             >
               <div style={{ width: "50%" }}>
                 <h4>{cards.title}</h4>
@@ -350,8 +343,6 @@ const page = () => {
                 <img
                   src={`${cards.img_url}`}
                   alt=""
-                  width={150}
-                  height={150}
                   style={{ borderRadius: "50%" }}
                 />
               </div>
@@ -372,70 +363,69 @@ const page = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="next-button">
-        <a href="/shop" className="next-btn">
-          View All Books
-          <IoMdArrowForward />
-        </a>
+        <div className="next-button">
+          <a href="/shop" className="next-btn">
+            View All Books
+            <IoMdArrowForward />
+          </a>
+        </div>
       </div>
 
-      <div className="featured-book r_container">
-        <h1>Featured Book of the Week</h1>
-        <div className="featured-info">
-          <img
-            src="/home_images/almanack.jpg"
-            alt=""
-            width={370}
-            height={530}
-          />
-          <div className="book-details">
-            <h4>The Almanack Of Naval Ravikant</h4>
-            <p>
-              Getting rich is not just about luck;happiness is just a <br />
-              trait we bornwith these.Aspirations may seem out of reach,but
-              bulding wealth and being happy are skills we learn{" "}
-            </p>
-            <p>
-              So,what are these skills,and how do we learn them?What are the
-              principles that should guide our efforts?
-            </p>
-            <br /> <br /> <br /> <br />
-            <h5>Eric Jorgenson</h5>
-            <p>$10.36 USD</p>
-            <br /> <br />
-            <a href="/shop" className="next-btn">
-              Shop now
-            </a>
-          </div>
-          <div className="more-books">
-            <div className="books">
-              <img
-                src="/home_images/psychology.jpg"
-                alt=""
-                width={140}
-                height={200}
-              />
-              <div className="book-desc">
-                <h4>
-                  The Psychology Of <br />
-                  Money
-                </h4>
-                <p>$6.40 USD</p>
-              </div>
+      <div className="featured-book ">
+        <div className="r_container">
+          <h1>Featured Book of the Week</h1>
+          <div className="featured-info">
+            <img
+              src="/home_images/almanack.jpg"
+              alt=""
+            />
+            <div className="book-details">
+              <h4>The Almanack Of Naval Ravikant</h4>
+              <p>
+                Getting rich is not just about luck;happiness is just a
+                trait we bornwith these.Aspirations may seem out of reach,but
+                bulding wealth and being happy are skills we learn{" "}
+              </p>
+              <p>
+                So,what are these skills,and how do we learn them?What are the
+                principles that should guide our efforts?
+              </p>
+              <h5>Eric Jorgenson</h5>
+              <p>$10.36 USD</p>
+              <br /> <br />
+              <a href="/shop" className="next-btn">
+                Shop now
+              </a>
             </div>
-            <hr />
-            <br />
-            <div className="books">
-              <img
-                src="/home_images/12rules.jpg"
-                alt=""
-                width={140}
-                height={200}
-              />
-              <div className="book-desc">
-                <h4>12 Rules for Liife</h4>
-                <p>$9.74 USD</p>
+            <div className="more-books">
+              <div className="books">
+                <img
+                  src="/home_images/psychology.jpg"
+                  alt=""
+                  width={140}
+                  height={200}
+                />
+                <div className="book-desc">
+                  <h4>
+                    The Psychology Of <br />
+                    Money
+                  </h4>
+                  <p>$6.40 USD</p>
+                </div>
+              </div>
+              <hr />
+              <br />
+              <div className="books">
+                <img
+                  src="/home_images/12rules.jpg"
+                  alt=""
+                  width={140}
+                  height={200}
+                />
+                <div className="book-desc">
+                  <h4>12 Rules for Liife</h4>
+                  <p>$9.74 USD</p>
+                </div>
               </div>
             </div>
           </div>
@@ -447,7 +437,7 @@ const page = () => {
         <h1>Latest News And Resources</h1>
         <div className="blog-section">
           <div className="blog-right-section">
-            <img src="/blog_right.jpg" alt="" width={630} height={430} />
+            <img src="/blog_right.jpg" alt="" />
             <p>July 25,2023</p>
             <h4>A Journey into the Inchanting Depths Of Books</h4>
             <p>
@@ -457,7 +447,7 @@ const page = () => {
           </div>
           <div className="blog-left-section">
             <div className="side-section">
-              <img src="/blog1_left.jpg" alt="" height={300} width={330} />
+              <img src="/blog1_left.jpg" alt="" />
               <div className="blog-side-info">
                 <p>July 25,2023</p>
                 <h4>Embracing your Inner Strength And Achieving</h4>
@@ -467,7 +457,7 @@ const page = () => {
               </div>
             </div>
             <div className="side-section">
-              <img src="/blog2_left.jpg" alt="" height={300} width={330} />
+              <img src="/blog2_left.jpg" alt="" />
               <div className="blog-side-info">
                 <p>July 23,2023</p>
                 <h4>Books to Inspire, Motivate, And Unleash</h4>
@@ -479,12 +469,12 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="next-button">
-        <Link href="/blog" className="next-btn">
-          View All
-          <IoMdArrowForward />
-        </Link>
+        <div className="next-button">
+          <Link href="/blog" className="next-btn">
+            View All
+            <IoMdArrowForward />
+          </Link>
+        </div>
       </div>
 
       <FooterBase />

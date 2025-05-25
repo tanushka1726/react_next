@@ -8,10 +8,12 @@
   display: flex;
   background-color: #e5e6e1;
   gap: 25px;
+  justify-content: space-between;
+  padding: 80px 0;
 }
 
 .first-section-explore {
-  margin: 12rem 0 0 15px;
+  margin: 7rem 0 0 15px;
 }
 
 .first-section h1 {
@@ -23,11 +25,9 @@
   position: relative;
 }
 
-/* .first-section-left{
-    font-size: 5rem;
-    height: 60rem;
-    width: 68rem;
-} */
+.first-section-left {
+  max-width: 50%;
+}
 
 .home_below {
   background-color: #c1c3b7;
@@ -156,7 +156,7 @@
 }
 
 .btn {
-  padding: 20px 35px;
+  padding: 10px 28px;
   background-color: var(--black);
   color: var(--white);
   border-radius: 35px;
@@ -173,19 +173,13 @@
 
 .first-section-right {
   display: flex;
-  padding: 80px 0;
 }
 
 .psychology {
-  margin: 10rem 20px 0;
+  margin: 9rem 20px 0;
 }
 
-.second-section {
-  display: flex;
-  margin-top: 7rem;
-  height: 73rem;
-  /* padding: 30px; */
-}
+
 
 .community-left img {
   margin-left: 22rem;
@@ -214,10 +208,22 @@
 
 .explore {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.explore-category {
-  height: 25rem;
+.facility-card {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.facilities {
+  align-items: center;
+  gap: 15px;
+  padding: 50px 1.15rem;
+  display: flex;
 }
 
 .explore-category h1 {
@@ -227,7 +233,8 @@
 
 .explore-card {
   display: flex;
-  margin-left: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .side-bar {
@@ -236,7 +243,7 @@
 }
 
 .side-bar h3 {
-  margin: 20px;
+  margin: 20px 0;
   color: var(--white);
 }
 
@@ -260,7 +267,7 @@
   display: inline-block;
   border: 1px solid var(--black);
   padding: 10px 25px;
-  margin: 20px;
+  margin: 6rem 20px 3rem;
   border-radius: 50px;
 }
 
@@ -275,30 +282,23 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+  gap: 20px;
+  justify-content: center;
 }
 
-.book-card {
-  margin-left: 20px;
-}
 
 .book-card h5 {
   margin-top: 20px;
 }
 
-.facility {
-  height: 20rem;
-}
 
 .book-details {
-  height: 20rem;
-  width: 25rem;
-  margin: 30px;
+    width: 30%;
 }
 
 .featured-book {
   background-color: #e5e6e1;
-  height: 50rem;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .featured-book h1 {
@@ -313,7 +313,13 @@
 .books-info {
   margin-bottom: 30px;
 }
-
+.featured-info img{
+  width: 30%;
+}
+.featured-info{
+  gap: 1rem;
+  justify-content: space-between;
+}
 .books,
 .blog-section,
 .side-section,
@@ -326,26 +332,24 @@
   margin-bottom: 30px;
 }
 
-.blog {
-  margin-top: 6rem;
-}
-
 .blog-right-section {
   width: 50%;
 }
 
 .side-section {
-  margin-left: 20px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
+.side-section img {
+  width: 45%;
+}
 .blog-side-info {
   margin: 60px 20px 20px 30px;
 }
 
 .blog-section {
   margin-top: 30px;
+  gap: 20px;
 }
 
 .blog-right-section p {
@@ -370,7 +374,6 @@
 }
 
 .about-img-small {
-  background-color: #639400;
   width: 100%;
   max-width: 50%;
 }
@@ -427,4 +430,80 @@
 .button-wrap {
   align-items: center;
   display: flex;
+}
+
+.button-wrap a {
+  white-space: none;
+}
+
+@media (max-width: 1024px) {
+  .alchemist {
+    display: none;
+  }
+
+  .first-section-explore,
+  .psychology {
+    margin: 0;
+  }
+
+  .first-section-left {
+    max-width: 70%;
+  }
+
+  .about-wrap {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-head {
+    flex-direction: column-reverse;
+    align-items: center;
+    grid-row-gap: 50px;
+  }
+
+  .about-head,
+  .about-data-wrap {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .about-head img,
+  .about-data-wrap img {
+    width: 100%;
+  }
+
+  .about-img-small {
+    max-width: 100%;
+  }
+  .facility-card{
+    flex-wrap: wrap;
+  }
+  .facilities{
+    width: 48%;
+  }
+  .featured-info{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .featured-info img, .book-details{
+    width: 48%;
+  }
+  .more-books{
+    width: 100%;
+    display: flex;
+    flex-wrap: warp;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .blog-right-section, .blog-right-section img{
+    width: 100%;
+  }
+  .blog-section{
+    flex-wrap: wrap;
+
+  }
+}
+
+@media (max-width: 768px) {
+  
 }
