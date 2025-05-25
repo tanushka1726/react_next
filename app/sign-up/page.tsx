@@ -10,15 +10,17 @@ const page = () => {
                 <img src="self-discover1.jpg" alt="" />
                 <div className="log-section-card">
                     <form action="">
-                        <h1 className="login-heading">LOGIN</h1>
+                        <h1 className="login-heading">SIGN UP</h1>
+                        <input type="text" name="firstname" placeholder=" Enter Name" />
+                        <br />
                         <input type="text" name="email" placeholder=" Enter Email" />
                         <br />
                         <input type="text" name="password" placeholder=" Enter password" />
                         <br />
                         <div className="new_reader">
-                            <p>New to Reader</p> <Link href="/sign-up">Sign Up</Link>
+                            <p>Already a user</p> <Link href="/login">Login</Link>
                         </div>
-                        <input type="submit" className="button" value="Login"/>
+                        <input type="submit" className="button" value="Sign Up"/>
                         
 
                     </form>
