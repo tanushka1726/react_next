@@ -21,54 +21,54 @@ const Page = () => {
   const goPrev = () => swiperRef.current?.slidePrev();
   // const goTo = (index: number) => swiperRef.current?.slideToLoop(index);
 
-type reviewType = {
-  img: string;
-  heading: string;
-  para: string;
-  bgcolor: string;
-};
-const reviewCards : reviewType[] = [
+  type reviewType = {
+    img: string;
+    heading: string;
+    para: string;
+    bgcolor: string;
+  };
+  const reviewCards: reviewType[] = [
     {
-        heading: "Ronald Richards",
-        para: "I recently purchased a book from your store, and it was an absolute delight. The author's storytelling skills were exceptional, and the characters felt so real.",
-        bgcolor: "linear-gradient(to bottom, var(--purple), var(--purple) 20%, rgba(255, 255, 255, 0) 60%, rgba(238, 236, 243, 0))",
-        img: "review_image1.jpg"
+      heading: "Ronald Richards",
+      para: "I recently purchased a book from your store, and it was an absolute delight. The author's storytelling skills were exceptional, and the characters felt so real.",
+      bgcolor: "linear-gradient(to bottom, var(--purple), var(--purple) 20%, rgba(255, 255, 255, 0) 60%, rgba(238, 236, 243, 0))",
+      img: "review_image1.jpg"
     },
     {
-        heading: "Cody Fisher",
-        para: "Thank you for curating such amazing books in your store. The storyline was captivating, the characters were well-developed, and the writing style was engaging.",
-        bgcolor: "linear-gradient(to bottom, var(--pink), var(--pink) 20%, rgba(202, 157, 162, 0) 60%, rgba(202, 157, 162, 0))",
-        img: "review_image2.jpg"
+      heading: "Cody Fisher",
+      para: "Thank you for curating such amazing books in your store. The storyline was captivating, the characters were well-developed, and the writing style was engaging.",
+      bgcolor: "linear-gradient(to bottom, var(--pink), var(--pink) 20%, rgba(202, 157, 162, 0) 60%, rgba(202, 157, 162, 0))",
+      img: "review_image2.jpg"
     },
     {
-        heading: "Jenny Wilson",
-        para: "I'm so glad I stumbled upon your book store and found this hidden gem. I'm grateful to have discovered such a fantastic book at your store, and I can't wait to explore more titles in the future.",
-        bgcolor: "linear-gradient(to bottom, var(--yellow), var(--yellow) 20%, rgba(228, 185, 118, 0) 60%, rgba(228, 185, 118, 0))",
-        img: "review_image3.jpg"
+      heading: "Jenny Wilson",
+      para: "I'm so glad I stumbled upon your book store and found this hidden gem. I'm grateful to have discovered such a fantastic book at your store, and I can't wait to explore more titles in the future.",
+      bgcolor: "linear-gradient(to bottom, var(--yellow), var(--yellow) 20%, rgba(228, 185, 118, 0) 60%, rgba(228, 185, 118, 0))",
+      img: "review_image3.jpg"
     },
     {
-        heading: "Robert Fox",
-        para: "Readster has transformed my reading habits. With its offline reading feature, I can enjoy my favorite books even without an internet connection.",
-        bgcolor: "linear-gradient(#aebbba, #aebbba 20%, rgba(174, 187, 186, 0) 60%, rgba(174, 187, 186, 0))",
-        img: "review_image4.jpg"
+      heading: "Robert Fox",
+      para: "Readster has transformed my reading habits. With its offline reading feature, I can enjoy my favorite books even without an internet connection.",
+      bgcolor: "linear-gradient(#aebbba, #aebbba 20%, rgba(174, 187, 186, 0) 60%, rgba(174, 187, 186, 0))",
+      img: "review_image4.jpg"
     },
     {
-        heading: "Leslie Alexander",
-        para: "Readster has become my reading companion wherever I go. The cross-platform compatibility and cloud storage make it effortless to switch between devices.",
-        bgcolor: "linear-gradient(#857871, #857871 20%, rgba(133, 120, 113, 0) 60%, rgba(133, 120, 113, 0))",
-        img: "review_image5.jpg"
+      heading: "Leslie Alexander",
+      para: "Readster has become my reading companion wherever I go. The cross-platform compatibility and cloud storage make it effortless to switch between devices.",
+      bgcolor: "linear-gradient(#857871, #857871 20%, rgba(133, 120, 113, 0) 60%, rgba(133, 120, 113, 0))",
+      img: "review_image5.jpg"
     },
     {
-        heading: "Jerome Bell",
-        para: "Readster has completely transformed my reading experience. The vast collection of books, and seamless synchronization across devices have made it my go-to platform.",
-        bgcolor: "linear-gradient(#a3bbd0, #a3bbd0 20%, rgba(163, 187, 208, 0) 60%, rgba(163, 187, 208, 0))",
-        img: "review_image6.jpg"
+      heading: "Jerome Bell",
+      para: "Readster has completely transformed my reading experience. The vast collection of books, and seamless synchronization across devices have made it my go-to platform.",
+      bgcolor: "linear-gradient(#a3bbd0, #a3bbd0 20%, rgba(163, 187, 208, 0) 60%, rgba(163, 187, 208, 0))",
+      img: "review_image6.jpg"
     },
-]
+  ]
 
   return (
     <>
-    <Banner title="About us" description="At Readster, we believe in the power of literature to transport us to
+      <Banner title="About us" description="At Readster, we believe in the power of literature to transport us to
           new worlds, ignite our imagination, and inspire personal
           growth."/>
       <div className="about-our-story r_container">
@@ -77,8 +77,10 @@ const reviewCards : reviewType[] = [
           <div className="our_story our_desktop">Our story</div>
         </div>
         <div className="about-first-right-section">
-          <img src="about_book.jpg" alt="books"/>
-          <div className="our_story mobile_our_story">Our story</div>
+          <img src="about_book.jpg" alt="books" />
+          <div className=" mobile_our_story">
+            <div className="our_story">Our story</div>
+          </div>
           <p>
             Welcome to Readster, your ultimate destination for all things books!
             At Readster, we believe in the power of literature to inspire,
@@ -93,7 +95,7 @@ const reviewCards : reviewType[] = [
         </div>
       </div>
       <div className="work-with-us r_container">
-        <img src="work-with-us.jpg" alt="work" width={790} height={490} />
+        <img src="work-with-us.jpg" alt="work" />
         <div className="work-para">
           <h1>Work With Us</h1>
           <p>
@@ -117,7 +119,7 @@ const reviewCards : reviewType[] = [
             represent different categories of books.
           </p>
         </div>
-        <img src="publish.jpg" alt="publish" width={790} height={450} />
+        <img src="publish.jpg" alt="publish" />
       </div>
       <div className="publish-with-us r_container">
         <div className="publish-left-side">
@@ -148,19 +150,19 @@ const reviewCards : reviewType[] = [
         <h1>Our Team</h1>
         <div className="team-member-info">
           <div className="team-members-card">
-            <img src="ester.jpg" alt="ester"   />
+            <img src="ester.jpg" alt="ester" />
             <div className="member-name">Ester Howard</div>
           </div>
           <div className="team-members-card">
-            <img src="jenny.jpg" alt="jenny"  />
+            <img src="jenny.jpg" alt="jenny" />
             <div className="member-name">Jenny Wilson</div>
           </div>
           <div className="team-members-card">
-            <img src="robert.jpg" alt="robert"  />
+            <img src="robert.jpg" alt="robert" />
             <div className="member-name">Robert Fox</div>
           </div>
           <div className="team-members-card">
-            <img src="cody.jpg" alt="cody"  />
+            <img src="cody.jpg" alt="cody" />
             <div className="member-name">Cody Fisher</div>
           </div>
         </div>
@@ -306,28 +308,28 @@ const reviewCards : reviewType[] = [
             fill="#E4B976"
           />
         </svg>
-        
+
       </div>
       <div className="py-4 r_container">
         {/* Custom Navigation */}
         <div className="testimonials">
-        <div className="testimonial">Testimonial</div>
-      </div>
-        <div className="d-flex justify-content-between mb-3">
-        <h1>What Readers Saying</h1>
-        <div className="">
-          <button className="btn " onClick={goPrev}>
-            ← 
-          </button>
-          <button className="btn" onClick={goNext}>
-            →
-          </button>
+          <div className="testimonial">Testimonial</div>
         </div>
-          
+        <div className="d-flex justify-content-between mb-3">
+          <h1>What Readers Saying</h1>
+          <div className="swiper_btn">
+            <button className="btn " onClick={goPrev}>
+              ←
+            </button>
+            <button className="btn" onClick={goNext}>
+              →
+            </button>
+          </div>
+
         </div>
 
         {/* Swiper */}
-        <div style={{ width: "100%", height: "450px", position: "relative" }}>
+        <div style={{ width: "100%", position: "relative" }}>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -339,32 +341,32 @@ const reviewCards : reviewType[] = [
               delay: 3000,
               pauseOnMouseEnter: true, // ✅ This pauses autoplay on hover
             }}
-             breakpoints={{
-    0: {
-      slidesPerView: 1.5,
-    },
-    425: {
-      slidesPerView: 2,
-    },
-    728: {
-      slidesPerView: 2.5,
-    },
-    1024: {
-      slidesPerView: 3.5,
-    },
-  }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              425: {
+                slidesPerView: 1.5,
+              },
+              728: {
+                slidesPerView: 2.5,
+              },
+              1024: {
+                slidesPerView: 3.5,
+              },
+            }}
             navigation={false} // ⛔ Hides default arrows
             pagination={false} // ⛔ Hides default dots
           >
             {reviewCards.map((card, index) => (
               <SwiperSlide key={index}>
                 <div key={index} className="review_card">
-                    <div className="review_overlay" style={{backgroundImage: card.bgcolor}}></div>
-                    <div className="review_info">
-                        <h3>{card.heading}</h3>
-                        <p>{card.para}</p>
-                    </div>
-                    <img className="review_image"  alt={card.heading + "Image"} src={`/review_img/${card.img}`} />
+                  <div className="review_overlay" style={{ backgroundImage: card.bgcolor }}></div>
+                  <div className="review_info">
+                    <h3>{card.heading}</h3>
+                    <p>{card.para}</p>
+                  </div>
+                  <img className="review_image" alt={card.heading + "Image"} src={`/review_img/${card.img}`} />
                 </div>
               </SwiperSlide>
             ))}
@@ -389,7 +391,7 @@ const reviewCards : reviewType[] = [
           ))}
         </div> */}
       </div>
-      <FooterBase/>
+      <FooterBase />
     </>
   );
 };

@@ -1,6 +1,9 @@
 .headerContainer{
   border-bottom: 1px solid black;
-  position: relative;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
 }
 
 .navList {
@@ -8,6 +11,7 @@
   align-items: center;
   gap: 50px;
   padding: 14px 20px;
+   background-color: white;
 }
 .navList a {
   font-size: 18px;
@@ -16,6 +20,7 @@
   color: black;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 .navList span {
   margin: 15px 20px 10px 10px;
@@ -94,16 +99,14 @@ span:hover {
   display: none;
 }
 .overlay {
-  position: absolute;
-  top: 100%;
+  position: fixed;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full screen height */
   transform: translateY(-100%); /* Position off-screen */
   visibility: hidden; /* Ensure it's hidden when not open */
   transition: transform 0.3s ease-out, visibility 0s linear 0.5s; /* Delay visibility change */
   padding: 0;
-  z-index: 99;
+  z-index: -1;
 }
 
 .overlay.open {
@@ -147,11 +150,17 @@ span:hover {
 .mob_search input{
   width: 100%;
 }
+.header_height{
+  height: 70px;
+}
 /* On small screens */
 @media (max-width: 990px) {
   .hamburger-icon {
     display: block;
     cursor: pointer;
+  }
+  .header_height{
+    height: 68px;
   }
   .desktop_link, .navList a:not(:first-child){
     display: none;

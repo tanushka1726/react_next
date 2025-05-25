@@ -62,12 +62,16 @@
     padding: 10px;
     display: inline-block;
 }
-.about-first-right-section{
+
+.about-first-right-section {
     width: 60%;
 }
-.about-first-right-section img, .about-first-left-section img{
+
+.about-first-right-section img,
+.about-first-left-section img {
     height: 440px;
 }
+
 .about-first-right-section p {
     margin: 30px 20px 0 0;
     line-height: 30px;
@@ -75,8 +79,7 @@
 }
 
 .work-with-us {
-      display: flex
-;
+    display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 6rem;
@@ -98,7 +101,7 @@
 }
 
 .publish {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 6rem;
@@ -145,7 +148,12 @@
     padding: 10px 20px;
     margin-top: 20px;
 }
-
+.swiper_btn{
+    display: flex;
+}
+.btn{
+    font-size: 2rem;
+}
 .send-email span {
     font-weight: 700;
 }
@@ -165,8 +173,8 @@
 }
 
 .team-members {
- padding-top: 3rem;
- padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .team-members h1,
@@ -189,7 +197,7 @@
 
 .team-member-info {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
@@ -199,35 +207,36 @@
     position: relative;
     width: 23.5%;
 }
-.team-members-card img{
-  object-fit: cover;
+
+.team-members-card img {
+    object-fit: cover;
 }
 
 .review {
-        background-color: #e0cbcd;
-    display: flex
-;
+    background-color: #e0cbcd;
+    display: flex;
     justify-content: space-between;
     padding: 4rem 20px 4rem;
     position: relative;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.review-card {
+/* .review-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .review-card h1 {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 4rem;
+    text-align: center;
 }
-
-
-
-
+.review-card p{
+    text-align: center;
+}
 .state-img {
     position: absolute;
     bottom: 0;
@@ -259,9 +268,11 @@
     margin-left: auto;
     gap: 7px;
 }
-.mobile_our_story{
+
+.mobile_our_story {
     display: none;
 }
+
 @media (max-width: 1024px) {
 
     .state-img-wrap,
@@ -269,24 +280,65 @@
     .state-graphics {
         display: none;
     }
+
     .team-members-card {
-    width: 47%;
+        width: 47%;
+    }
+
+    .our_desktop {
+        display: none;
+    }
+
+    .mobile_our_story {
+        display: inline-block;
+    }
+    .publish{
+        flex-direction: column-reverse;
+    }
+    .about-our-story,
+    .work-with-us
+     {
+        flex-direction: column;
+    }
+    .about-first-right-section{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about-first-right-section, .about-first-left-section, .work-with-us img, .about-first-left-section img, .publish img{
+        width: 100%;
+
+    }
+    .about-first-right-section img,
+.about-first-left-section img {
+    height: auto;
 }
-.our_desktop{
-    display: none;
+
 }
-.mobile_our_story{
-    display: block;
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 47%;
+    }
+    .work-with-us h1, .publish h1, .publish-with-us h1{
+        font-size: 2.5rem;
+    }
 }
-}
+
 @media (max-width: 550px) {
 
-   
+
     .publish-with-us {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    .publish-left-side, .publish-right-side{
+.member-name {
+    bottom: 5px;
+    left: 5px;
+    white-space: nowrap;
+}
+    .publish-left-side,
+    .publish-right-side {
         width: 100%;
     }
 }

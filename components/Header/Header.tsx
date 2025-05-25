@@ -35,6 +35,7 @@ const Page = () => {
   const toggleDropdown = () => setIsOpen(!isOpen);
     const handleLinkClick = () => setMenuOpen(false);
   return (
+    <>
     <header className="headerContainer">
       <ul className="navList r_container">
         <Link href="/">
@@ -91,6 +92,7 @@ const Page = () => {
         </div>
        
       </ul>
+      
        <ul className={`overlay ${menuOpen ? 'open' : ''}`}>
       <div className="mobileMenu">
         <div className="search-bar mob_search">
@@ -123,6 +125,8 @@ const Page = () => {
       </div>
     </ul>
     </header>
+    <div className="header_height"></div>
+    </>
   );
 };
 export default Page;
