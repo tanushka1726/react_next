@@ -278,14 +278,20 @@ const page = () => {
                 transformative power of books and their ability to shape and inspire individuals. Our mission is to
                 create a vibrant and inclusive community that celebrates the joy of reading and encourages personal
                 growth.</p>
-              <div className="button-wrap"><a data-w-id="790d5147-5340-d65e-fa0e-a4082775f6ae" href="about-us.html"
+              <div className="button-wrap">
+              
+                <Link href="/about"
                 className="primary-btn w-inline-block">
-                <div>About us</div><img
+                About us
+                <img
                   src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
-                  loading="eager" style={{ display: "block" }} alt="Arrow" className="default-btn-arrow" /><img
+                  loading="eager"  alt="Arrow"  className="default-btn-arrow" />
+                  <img
                   src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
-                  loading="eager" style={{ display: "none" }} alt="Arrow" className="hover-btn-arrow" />
-              </a></div>
+                  loading="eager" alt="Arrow"  className="hover-btn-arrow" />
+               </Link>
+               
+              </div>
             </div>
           </div>
         </div>
@@ -321,10 +327,10 @@ const page = () => {
           ))}
         </div>
         <div className="next-button">
-          <a href="/shop" className="next-btn">
+          <Link href="/shop" className="next-btn">
             View All
             <IoMdArrowForward />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="facility r_container">
@@ -364,10 +370,10 @@ const page = () => {
           ))}
         </div>
         <div className="next-button">
-          <a href="/shop" className="next-btn">
+          <Link href="/shop" className="next-btn">
             View All Books
             <IoMdArrowForward />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -393,9 +399,9 @@ const page = () => {
               <h5>Eric Jorgenson</h5>
               <p>$10.36 USD</p>
               <br /> <br />
-              <a href="/shop" className="next-btn">
+              <Link href="/shop" className="next-btn">
                 Shop now
-              </a>
+              </Link>
             </div>
             <div className="more-books">
               <div className="books">

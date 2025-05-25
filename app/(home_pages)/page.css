@@ -109,20 +109,15 @@
 }
 
 .primary-btn {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   color: var(--black);
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #000;
   border-radius: 50px;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 30px;
+  text-decoration: none;
+  padding: 12px 10px;
   font-family: "Aspekta 400", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 170%;
-  text-decoration: none;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   display: flex;
 }
@@ -538,6 +533,10 @@
 
   .first-section-right {
     margin: auto;
+  }
+  .primary-btn{
+    display: flex;
+    align-items: center;
   }
 
   .facilities {
