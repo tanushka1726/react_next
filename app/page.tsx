@@ -402,8 +402,6 @@ const page = () => {
                 <img
                   src="/home_images/psychology.jpg"
                   alt=""
-                  width={140}
-                  height={200}
                 />
                 <div className="book-desc">
                   <h4>
@@ -419,8 +417,6 @@ const page = () => {
                 <img
                   src="/home_images/12rules.jpg"
                   alt=""
-                  width={140}
-                  height={200}
                 />
                 <div className="book-desc">
                   <h4>12 Rules for Liife</h4>

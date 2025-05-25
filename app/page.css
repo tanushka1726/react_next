@@ -267,14 +267,13 @@
   display: inline-block;
   border: 1px solid var(--black);
   padding: 10px 25px;
-  margin: 6rem 20px 3rem;
+  margin: 6rem 0 3rem;
   border-radius: 50px;
 }
 
 .trending-books h1,
 .blog h1 {
   font-weight: 200;
-  margin-left: 20px;
 }
 
 .book-store {
@@ -293,7 +292,7 @@
 
 
 .book-details {
-    width: 30%;
+  width: 70%;
 }
 
 .featured-book {
@@ -313,13 +312,16 @@
 .books-info {
   margin-bottom: 30px;
 }
-.featured-info img{
+
+.featured-info img {
   width: 30%;
 }
-.featured-info{
+
+.featured-info {
   gap: 1rem;
   justify-content: space-between;
 }
+
 .books,
 .blog-section,
 .side-section,
@@ -340,9 +342,11 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
 .side-section img {
   width: 45%;
 }
+
 .blog-side-info {
   margin: 60px 20px 20px 30px;
 }
@@ -475,35 +479,139 @@
   .about-img-small {
     max-width: 100%;
   }
-  .facility-card{
+
+  .facility-card {
     flex-wrap: wrap;
   }
-  .facilities{
+
+  .facilities {
     width: 48%;
   }
-  .featured-info{
+
+  .featured-info {
     flex-wrap: wrap;
     gap: 2rem;
   }
-  .featured-info img, .book-details{
-    width: 48%;
+
+  .featured-info img,
+  .book-details {
+    width: 47%;
   }
-  .more-books{
+
+  .more-books {
     width: 100%;
     display: flex;
-    flex-wrap: warp;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
   }
-  .blog-right-section, .blog-right-section img{
+
+  .blog-right-section,
+  .blog-right-section img {
     width: 100%;
   }
-  .blog-section{
+
+  .blog-section {
     flex-wrap: wrap;
 
   }
 }
 
+@media (max-width: 888px) {
+  .first-section-explore h1 {
+    font-size: 56px;
+  }
+}
+
 @media (max-width: 768px) {
-  
+  .first-section {
+    flex-wrap: wrap;
+  }
+
+  .first-section-explore h1 {
+    font-size: 48px;
+  }
+
+  .first-section-left {
+    max-width: 100%;
+  }
+
+  .first-section-right {
+    margin: auto;
+  }
+
+  .facilities {
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .shop-now {
+    margin: 60px 0 10px;
+  }
+
+  .explore-card {
+    width: 80%;
+    justify-content: normal;
+  }
+
+  .book-desc {
+    padding: 0;
+  }
+
+  .books {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .books img,
+  .book-details {
+    width: 100%;
+  }
+
+  .featured-info>img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .hero-review {
+    display: none;
+  }
+
+  .hero-category {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .first-section-explore h1 {
+    font-size: 30px;
+  }
+
+  .first-section {
+    padding-top: 50px;
+  }
+
+  .about-head,
+  .about-data-wrap {
+    max-width: 100%;
+  }
+
+  .side-section {
+    flex-wrap: wrap;
+  }
+
+  .explore-card,
+  .facilities,
+  .featured-info>img,
+  .side-section img {
+    width: 100%;
+  }
+
+  .blog-side-info {
+    margin: 60px 0 30px;
+  }
+
+  .book-desc h4 {
+    font-size: 18px;
+  }
 }
