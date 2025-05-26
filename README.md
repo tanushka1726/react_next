@@ -1,1 +1,87 @@
-<pre lang="md"> ```markdown # 📖 Reader Website A responsive and dynamic blog reading platform built with **Next.js** and **TypeScript**, focused on seamless user experience, structured content presentation, and scalable architecture. ## 🚀 Live Website 👉 [readerhere.netlify.app](https://readerhere.netlify.app) 👉 [GitHub Repository](https://github.com/tanushka1726/react_next) --- ## 🛠️ Tech Stack - **Next.js** – React framework for full stack web development - **TypeScript** – Type-safe JavaScript - **Tailwind CSS** – Utility-first CSS for styling - **Framer Motion** – For smooth animations and transitions - **Axios** – For API requests - **MySQL** – For structured backend data (via API integration) --- ## 📂 Features - ✅ Fully responsive layout - ✅ Dynamic routing for blog posts and categories - ✅ SEO-friendly structure with `generateMetadata` and `generateStaticParams` - ✅ Sticky sidebar for related posts and categories - ✅ Swiper carousel integration for featured content - ✅ Centralized layout and reusable components - ✅ Smooth animations and optimized performance --- ## 📁 Project Structure ``` app/ │ ├── layout.tsx # Root layout ├── page.tsx # Home page ├── [blogSlug]/ # Dynamic blog detail page ├── services/ # Service pages (nested routing) │ └── [secondPage]/[thirdPage]/ ├── category/ # Category-based routing │ └── [categoryPage]/ │ lib/ # Shared utilities like metadata and route validation components/ # Reusable UI components styles/ # Tailwind and global CSS ``` --- ## 🧠 Concepts Covered - Server-side rendering (SSR) and static generation (SSG) with Next.js App Router - Dynamic routing and parameter handling - Reusable metadata and 404 logic using centralized config - Integration with MySQL for blog content and services - Smooth UI with Framer Motion & Tailwind - Modular, clean component-based architecture --- ## 🔧 Getting Started 1. **Clone the repo** ```bash git clone https://github.com/tanushka1726/react_next.git cd react_next ``` 2. **Install dependencies** ```bash npm install ``` 3. **Run development server** ```bash npm run dev ``` 4. Visit `http://localhost:3000` in your browser. > **Note:** Make sure to configure your `.env` file if using any backend API routes. --- ## 📌 Status 🟢 Phase 1 Complete 🔄 UI/UX enhancements in progress 🔜 Future updates will include search, CMS integration, and more refined animations --- ## 🤝 Contributions Open to ideas, suggestions, and collaborations. Feel free to fork or submit a PR! --- ## 📬 Connect Made with ❤️ by [Tanushka](https://www.linkedin.com/in/tanushka1726/) --- ## 📄 License This project is licensed under the MIT License. ``` </pre>
+# 📖 Reader Website
+
+A modern, responsive blog reading platform built using **Next.js** and **TypeScript**, with a focus on performance, interactivity, and scalability.
+
+---
+
+## 🚀 Live Project
+
+- 🌐 [Live Website](https://readerhere.netlify.app)
+- 💻 [GitHub Repository](https://github.com/tanushka1726/react_next)
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js** – Full-stack React Framework
+- **TypeScript** – Strongly typed JavaScript
+- **Tailwind CSS** – Utility-first CSS Framework
+- **Framer Motion** – Declarative animations
+
+---
+
+## ✨ Features
+
+- 🔄 Dynamic Routing & Slugs
+- 🧩 Component-based architecture
+- 📰 Blog Detail Pages with Related Content
+- 📱 Fully Responsive Design
+- 📊 Optimized User Experience with Sticky Sidebar & Swiper Carousel
+- 🌐 SEO-friendly with custom `generateMetadata`
+
+---
+
+## 🧠 Concepts Covered
+
+- App Router-based Routing
+- Reusable Metadata & 404 Handling
+- Dynamic Content from MySQL
+- Component Props & Slot Rendering
+- UI Animation with Framer Motion
+
+---
+
+## ▶️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/tanushka1726/react_next.git
+   cd react_next
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit the app**
+   Open [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🔍 What's Next?
+
+- 🎯 Improving CMS Integration
+- 🎨 UI Polish and Animations
+- 🧾 Search & Filtering Capabilities
+
+---
+
+## 🙌 Acknowledgements
+
+Crafted with care and continuous learning. Special thanks to everyone who gave feedback and support.
+
+---
+
+## 📜 License
+
+MIT License. Free for personal and commercial use.
+
+---
+
+Made with ❤️ by [Tanushka](https://www.linkedin.com/in/tanushka1726/)
