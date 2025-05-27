@@ -142,10 +142,10 @@ const page = () => {
                   Find your next great read at our online book
                   store
                 </h1>
-                <a href="/shop" className="btn">
+                <Link href="/shop" className="btn">
                   Explore Books
                   <IoMdArrowForward />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="first-section-right">
@@ -180,20 +180,20 @@ const page = () => {
                     alt="Star"
                   />
                 </div>
-                <a
-                  href="category/biography.html"
+                <Link
+                  href="category/biography"
                   className="category-tag w-inline-block"
                 >
                   <div>Biography</div>
-                </a>
+                </Link>
               </div>
               <div className="category-btn">
-                <a
-                  href="category/novel.html"
+                <Link
+                  href="category/novel"
                   className="category-tag w-inline-block"
                 >
                   <div>Novel</div>
-                </a>
+                </Link>
                 <div className="star-icon">
                   <img
                     src="/home_images/star.svg"
@@ -201,23 +201,23 @@ const page = () => {
                     alt="Star"
                   />
                 </div>
-                <a
-                  href="category/self-help.html"
+                <Link
+                  href="category/self-help"
                   className="category-tag w-inline-block"
                 >
                   <div>Self Help</div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="hero-review">
               <div className="review-top">
                 <div className="button-wrap style-btn">
-                  <a
-                    href="customer-review.html"
+                  <Link
+                    href="/customer-review"
                     className="primary-btn review w-inline-block"
                   >
                     <div>Reviews</div>
-                  </a>
+                  </Link>
                   <div className="review-img-wrap">
                     <div className="hero-review-img">
                       <img
@@ -279,18 +279,18 @@ const page = () => {
                 create a vibrant and inclusive community that celebrates the joy of reading and encourages personal
                 growth.</p>
               <div className="button-wrap">
-              
+
                 <Link href="/about"
-                className="primary-btn w-inline-block">
-                About us
-                <img
-                  src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
-                  loading="eager"  alt="Arrow"  className="default-btn-arrow" />
+                  className="primary-btn w-inline-block">
+                  About us
                   <img
-                  src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
-                  loading="eager" alt="Arrow"  className="hover-btn-arrow" />
-               </Link>
-               
+                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b509579ee5d800c56a7e21_ic-arrow.svg"
+                    loading="eager" alt="Arrow" className="default-btn-arrow" />
+                  <img
+                    src="https://cdn.prod.website-files.com/6491518bb88c5c4729ea8883/64b50992f5ddcd2d97e7be88_ic-arrow-white.svg"
+                    loading="eager" alt="Arrow" className="hover-btn-arrow" />
+                </Link>
+
               </div>
             </div>
           </div>

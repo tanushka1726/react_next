@@ -97,13 +97,14 @@ const Page = () => {
               <label htmlFor="message">Message</label>
               <textarea rows={4} />
             </div>
+            <div className="next-button">
+              <button className="next-btn" type="submit">Submit</button>
+            </div>
           </form>
         </div>
       </div>
 
-      <div className="next-button">
-        <a href="" className="next-btn">Submit<IoMdArrowForward /></a>
-      </div>
+
       <div className="location_container">
         <div className="location r_container">
           <h1>Our Stores Location</h1>
