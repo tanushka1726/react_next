@@ -1,11 +1,11 @@
-import "@/app/globals.css";
-import "@/app/(admin_pages)/adminGlobal.css"
+// import "@/app/globals.css";
+import "@/app/(admin_pages)/admin/adminGlobal.css"
 import { Metadata } from "next";
 import AdminHead from "@/components/AdminHeader/AdminHead";
 
 export const metadata: Metadata = {
-  title: "Badarwal - Admin",
-  description: "Badarwal Admin",
+  title: " Admin",
+  description: " Admin",
 };
 
 export default function RootLayout({
