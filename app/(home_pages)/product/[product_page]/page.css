@@ -34,6 +34,13 @@
     padding: 10px 30px;
     text-align: center;
 }
+.add:hover{
+      background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  transition-duration: all 0.3s ease-in-out;
+
+}
 
 .book-info h4 span {
     margin-left: 20px;
