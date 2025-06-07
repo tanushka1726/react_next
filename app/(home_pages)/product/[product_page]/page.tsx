@@ -63,13 +63,13 @@ const page = ()=>{
        </div>
        <div className="similar-books r_container">
         <h1>Similar Books</h1>
-        <div className="book-store">
+        <div className="book-store" style={{marginBottom:"40px"}}>
         {Book.map((Books,index)=>(
             <div key={index} className="book-card">
               <img src={`${Books.image}`} alt="" width={300} height={400}/>
               <h5 style={{marginBottom:"30px"}}>{Books.title}</h5>
-              <Link href="/read/books/chapters" className="next-btn">Read</Link>
-              <Link href="/product/product_page" className="btn">Buy</Link>
+              <Link href="/read/books/chapters" className="read">Read</Link>
+              <Link href="/product/product_page" className="buy" style={{marginLeft:"30px"}}>Buy Now</Link>
             </div>
           ))}
           
