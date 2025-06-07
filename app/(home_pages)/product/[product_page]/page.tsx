@@ -68,8 +68,8 @@ const page = ()=>{
             <div key={index} className="book-card">
               <img src={`${Books.image}`} alt="" width={300} height={400}/>
               <h5 style={{marginBottom:"30px"}}>{Books.title}</h5>
-              {/* <Link href="/read/books/chapters" className="next-btn">Read</Link>
-              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link> */}
+              <Link href="/read/books/chapters" className="next-btn">Read</Link>
+              <Link href="/product/product_page" className="btn">Buy</Link>
             </div>
           ))}
           
