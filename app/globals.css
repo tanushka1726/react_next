@@ -186,3 +186,35 @@ li {
   justify-content: end;
   margin: 2.5rem 0.5rem;
 }
+.read:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.read{
+   padding: 10px 15px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  text-decoration: none;
+  font-weight: 200;
+  transition: all 0.3s ease-in-out;
+
+}
+.buy{
+   padding: 10px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 15px;
+  text-decoration:none;
+}
+.buy:hover{
+   background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  transition-duration: all 0.3s ease-in-out;
+}
