@@ -321,8 +321,9 @@ const page = () => {
           {popBook.map((popBooks, index) => (
             <div key={index} className="book-card">
               <img src={`${popBooks.image}`} alt="" width={300} height={400} />
-              <h5>{popBooks.title}</h5>
-              <p>{popBooks.price}</p>
+              <h5 style={{marginBottom:"20px"}}>{popBooks.title}</h5>
+              <Link href="/read/books/chapters" className="next-btn">Read</Link>
+              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
             </div>
           ))}
         </div>
@@ -364,8 +365,9 @@ const page = () => {
           {newBook.map((newBooks, index) => (
             <div key={index} className="book-card">
               <img src={`${newBooks.image}`} alt="" width={300} height={400} />
-              <h5>{newBooks.title}</h5>
-              <p>{newBooks.price}</p>
+              <h5 style={{marginBottom:"20px"}}>{newBooks.title}</h5>
+              <Link href="/read/books/chapters" className="next-btn">Read</Link>
+              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
             </div>
           ))}
         </div>

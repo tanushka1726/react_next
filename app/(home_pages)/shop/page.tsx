@@ -2,6 +2,7 @@ import React from "react";
 import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
 import Banner from "@/components/Banner/Banner"
+import Link from "next/link";
 type books = {
   image: string;
   title: string;
@@ -79,9 +80,10 @@ const page = () => {
     <div className="book-store r_container">
     {book.map((books,index)=>(
             <div  className="book-card" key={index}>
-              <img src={`${books.image}`} alt="" width={300} height={400}/>
-              <h5>{books.title}</h5>
-              <p>{books.price}</p>
+              <img src={`${books.image}`} alt="" width={300} height={400} style={{marginTop:"30px"}}/>
+              <h5 style={{marginBottom:"2rem"}}>{books.title}</h5>
+              <Link href="/read/books/chapters" className="next-btn">Read</Link>
+              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
             </div>
           ))}
       
