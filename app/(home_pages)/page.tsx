@@ -321,9 +321,9 @@ const page = () => {
           {popBook.map((popBooks, index) => (
             <div key={index} className="book-card">
               <img src={`${popBooks.image}`} alt="" width={300} height={400} />
-              <h5 style={{marginBottom:"20px"}}>{popBooks.title}</h5>
-              <Link href="/read/books/chapters" className="next-btn">Read</Link>
-              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
+              <h5 style={{marginBottom:"30px"}}>{popBooks.title}</h5>
+              <Link href="/read/books/chapters" className="read">Read</Link>
+              <Link href="/product/product_page" className="buy" style={{marginLeft:"30px"}}>Buy Now</Link>
             </div>
           ))}
         </div>
@@ -365,9 +365,9 @@ const page = () => {
           {newBook.map((newBooks, index) => (
             <div key={index} className="book-card">
               <img src={`${newBooks.image}`} alt="" width={300} height={400} style={{marginTop:"20px"}}/>
-              <h5 style={{marginBottom:"20px"}}>{newBooks.title}</h5>
-              <Link href="/read/books/chapters" className="next-btn">Read</Link>
-              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
+              <h5 style={{marginBottom:"30px"}}>{newBooks.title}</h5>
+              <Link href="/read/books/chapters" className="read">Read</Link>
+              <Link href="/product/product_page" className="buy" style={{marginLeft:"30px"}}>Buy Now</Link>
             </div>
           ))}
         </div>

@@ -3,6 +3,7 @@ import "./page.css"
 import { IoMdArrowForward } from "react-icons/io";
 import Banner from "@/components/Banner/Banner"
 import Link from "next/link";
+
 type books = {
   image: string;
   title: string;
@@ -82,8 +83,8 @@ const page = () => {
             <div  className="book-card" key={index}>
               <img src={`${books.image}`} alt="" width={300} height={400} style={{marginTop:"30px"}}/>
               <h5 style={{marginBottom:"2rem"}}>{books.title}</h5>
-              <Link href="/read/books/chapters" className="next-btn">Read</Link>
-              <Link href="/product/product_page" className="btn" style={{marginLeft:"30px"}}>Buy</Link>
+              <Link href="/read/books/chapters" className="read">Read</Link>
+              <Link href="/product/product_page" className="buy" style={{marginLeft:"30px"}}>Buy Now</Link>
             </div>
           ))}
       
